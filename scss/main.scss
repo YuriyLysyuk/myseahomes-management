@@ -4,6 +4,9 @@
  * SETTINGS
  * Global...............Globally-available variables and config.
  * Include Media........media queries in Sass
+ *
+ * GENERIC
+ * Normalize.css
  */
 
 /*------------------------------------*\
@@ -12,3 +15,8 @@
 
 @import 'settings.scss';
 
+/*------------------------------------*\
+  #GENERIC
+\*------------------------------------*/
+
+@import '../node_modules/normalize.css/normalize.css';
