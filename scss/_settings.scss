@@ -35,3 +35,21 @@ $vertical-offset-phone: 4rem;
 
 $border-radius: 10rem;
 
+/**
+ * Breakpoints for Include Media
+ */
+
+$breakpoints: (
+  phone: 28.75em,
+  // 460px / 16px = 28.75em
+  tablet: 61.25em,
+  // 980px / 16px = 61.25em
+  desktop: 75em,
+  // 1200px / 16px = 75em
+);
+
+/*------------------------------------*\
+  #Include Media
+\*------------------------------------*/
+
+@import '../node_modules/include-media/dist/_include-media.scss';
