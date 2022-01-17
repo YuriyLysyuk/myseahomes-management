@@ -1,0 +1,94 @@
+/*------------------------------------*\
+  #FORMS
+\*------------------------------------*/
+
+*::-webkit-input-placeholder {
+  color: #404c5b;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #404c5b;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #404c5b;
+  opacity: 1;
+}
+
+input:focus:required:invalid,
+textarea:focus:required:invalid {
+  color: $red;
+}
+input:required:valid,
+textarea:required:valid,
+input,
+textarea {
+  color: $white;
+}
+
+.form {
+  width: 100%;
+  max-width: 27rem;
+  margin-top: $margin-2x;
+
+  &__control {
+    display: block;
+    background: #2a323d;
+    border-radius: $border-radius;
+    line-height: 1;
+    padding: 1.5rem;
+    border: none;
+    color: $white;
+    margin: 0 0 $margin 0;
+
+    &:last-of-type {
+      margin-bottom: $margin-2x;
+    }
+
+    &--wide {
+      width: 100%;
+    }
+
+    &--small {
+      @extend %small-form-control;
+    }
+  }
+}
+
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+.btn {
+  background: linear-gradient(95.14deg, $orange 0%, $dark-orange 100%);
+  box-shadow: 0 0 1rem $blue;
+  border-radius: $border-radius;
+  padding: 2rem;
+  text-transform: uppercase;
+  font-size: 1.6rem;
+  line-height: 1;
+  font-weight: 700;
+  @extend %transition;
+  text-shadow: 0 0 0.2rem map_get($brand-colors, darkest);
+  color: $white;
+
+  &:hover {
+    box-shadow: 0 0 1.5rem $blue;
+    text-shadow: 0 0 0.3rem map_get($brand-colors, darkest);
+  }
+
+  &--small {
+    @extend %small-form-control;
+  }
+
+  &--wide {
+    width: 100%;
+  }
+}
+
+%small-form-control {
+  padding: $margin;
+  font-size: 1.3rem;
+}
