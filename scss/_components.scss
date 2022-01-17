@@ -28,3 +28,16 @@ section {
     @extend %content-wrapper;
   }
 }
+
+/*------------------------------------*\
+  #PAGE HEADER
+\*------------------------------------*/
+
+.header {
+  padding-top: 4rem;
+  padding-bottom: 2rem;
+}
+
+.logo {
+  max-width: 8rem;
+}
