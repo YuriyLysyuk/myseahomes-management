@@ -69,6 +69,16 @@ p {
   margin: $margin-2x 0;
 }
 
+a {
+  text-decoration: none;
+  color: $white;
+  @extend %transition;
+
+  &:hover {
+    color: map_get($brand-colors, accent);
+  }
+}
+
 button {
   &:hover {
     cursor: pointer;
