@@ -7,6 +7,9 @@
  *
  * GENERIC
  * Normalize.css
+ * 
+ * HELPERS
+ * Text.................Text helpers.
  */
 
 /*------------------------------------*\
@@ -20,3 +23,9 @@
 \*------------------------------------*/
 
 @import '../node_modules/normalize.css/normalize.css';
+
+/*------------------------------------*\
+  #HELPERS
+\*------------------------------------*/
+
+@import 'helpers.scss';
