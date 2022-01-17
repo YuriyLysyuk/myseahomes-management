@@ -253,6 +253,9 @@ section {
   &__box {
     @extend %bordered-style-2;
     max-width: 32rem;
+    display: flex;
+    flex-direction: column;
+    gap: $margin-2x;
 
     & > p {
       font-size: 1.4rem;
@@ -457,6 +460,9 @@ section {
   &__item {
     &--bordered {
       @extend %bordered-style-2;
+      display: flex;
+      flex-direction: column;
+      gap: $margin-2x;
     }
 
     &--last {

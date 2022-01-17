@@ -29,34 +29,31 @@
 
 %bordered-style-2 {
   padding: $margin-3x;
-    border: 0.2rem solid $white;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    gap: $margin-2x;
-    
-    background-image: linear-gradient(
-      to right,
-      transparent 1.4rem,
-      map_get($brand-colors, darkest) 1.4rem,
-      map_get($brand-colors, darkest) 100%
-    );
+  border: 0.2rem solid $white;
+  position: relative;
 
-    &::after {
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: -1.5rem;
-      left: 1.5rem;
-      background-color: transparent;
-      border: 2px solid map_get($brand-colors, accent);
-      z-index: -1;
-    }
+  background-image: linear-gradient(
+    to right,
+    transparent 1.4rem,
+    map_get($brand-colors, darkest) 1.4rem,
+    map_get($brand-colors, darkest) 100%
+  );
 
-    & > * {
-      margin: 0;
-    }
+  &::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -1.5rem;
+    left: 1.5rem;
+    background-color: transparent;
+    border: 2px solid map_get($brand-colors, accent);
+    z-index: -1;
+  }
+
+  & > * {
+    margin: 0;
+  }
 }
 
 /*------------------------------------*\
@@ -67,11 +64,11 @@
   &--accented {
     color: map_get($brand_colors, accent);
   }
-  
+
   &--uppercased {
     text-transform: uppercase;
   }
-  
+
   &--underlined {
     border-bottom: 0.2rem solid map_get($brand_colors, accent);
   }
