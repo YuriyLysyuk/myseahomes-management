@@ -70,10 +70,10 @@ textarea {
   font-size: 1.6rem;
   line-height: 1;
   font-weight: 700;
-  @extend %transition;
   text-shadow: 0 0 0.2rem map_get($brand-colors, darkest);
   color: $white;
 
+  @extend %transition;
   @extend %animated;
 
   &:hover {
