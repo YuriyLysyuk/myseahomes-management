@@ -74,6 +74,8 @@ textarea {
   text-shadow: 0 0 0.2rem map_get($brand-colors, darkest);
   color: $white;
 
+  @extend %animated;
+
   &:hover {
     box-shadow: 0 0 1.5rem $blue;
     text-shadow: 0 0 0.3rem map_get($brand-colors, darkest);

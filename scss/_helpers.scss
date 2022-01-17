@@ -6,6 +6,12 @@
   transition: all 0.3s ease-out;
 }
 
+%animated {
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
 %bordered-style-1 {
   border: 0.2rem solid map_get($brand-colors, lighter);
   background-color: map_get($brand-colors, darkest);
