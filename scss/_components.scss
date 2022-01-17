@@ -255,3 +255,184 @@ section {
   }
 }
 
+/*------------------------------------*\
+  #SECTION OFFER
+\*------------------------------------*/
+
+.offer {
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    @include media('<=tablet') {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include media('<=phone') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    padding: 2rem 6rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+
+    @include media('<=tablet') {
+      padding: 2rem;
+
+      &:nth-child(1) {
+        order: 1;
+      }
+
+      &:nth-child(2) {
+        order: 2;
+      }
+
+      &:nth-child(3) {
+        order: 3;
+      }
+
+      &:nth-child(4) {
+        order: 6;
+      }
+
+      &:nth-child(5) {
+        order: 5;
+      }
+
+      &:nth-child(6) {
+        order: 4;
+      }
+
+      &:nth-child(7) {
+        order: 7;
+      }
+
+      &:nth-child(8) {
+        order: 8;
+      }
+
+      &:nth-child(9) {
+        order: 9;
+      }
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -2;
+
+      @include media('<=tablet') {
+        content: '';
+        position: absolute;
+        width: 100% !important;
+        height: 100%;
+        z-index: -2;
+        border-bottom: 2px dashed $white;
+        border-right: none !important;
+        border-left: none !important;
+        bottom: 4.5rem;
+        left: 0 !important;
+      }
+    }
+
+    &.line {
+      &__bottom {
+        &::after {
+          border-bottom: 2px dashed $white;
+          bottom: 4.5rem;
+          left: 4.5rem;
+        }
+
+        &--first::after {
+          width: calc(100% - 4.5rem);
+          left: 8.5rem;
+        }
+        &--last::after {
+          width: calc(100% - 4.5rem);
+        }
+      }
+
+      &__right {
+        &::after {
+          border-right: 2px dashed $white;
+        }
+      }
+
+      &__left {
+        &::after {
+          border-left: 2px dashed $white;
+        }
+      }
+    }
+
+    & > svg {
+      color: map_get($brand-colors, accent);
+      width: 8rem !important;
+      height: auto;
+    }
+
+    &--bg {
+      padding-top: 0;
+      padding-right: 0;
+
+      .bg {
+        background-image: url(../img/offer.jpg);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        height: 80%;
+        display: flex;
+
+        & h3 {
+          margin: auto;
+          padding: 4rem;
+          background-color: rgba(map_get($brand-colors, darkest), 0.8);
+          border-radius: $border-radius;
+        }
+      }
+    }
+  }
+
+  & h3 {
+    margin-bottom: 0;
+  }
+
+  & p {
+    font-size: 1.4rem;
+  }
+
+  &__number {
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+    font-size: 2.4rem;
+
+    & span {
+      position: relative;
+      display: flex;
+      width: 5rem;
+      height: 5rem;
+      justify-content: center;
+      align-items: center;
+
+      &::before {
+        content: '';
+        position: absolute;
+        border: 2px solid map_get($brand_colors, accent);
+        width: 5rem;
+        height: 5rem;
+        top: 0;
+        left: 0;
+        border-radius: 50%;
+        background-color: map_get($brand_colors, darkest);
+        z-index: -1;
+      }
+    }
+  }
+}
+
