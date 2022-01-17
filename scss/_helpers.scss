@@ -12,10 +12,6 @@
   position: relative;
   text-align: center;
   padding: $margin-2x;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
 
   &::before {
     content: '';
