@@ -1,0 +1,30 @@
+/*------------------------------------*\
+  #WRAPPERS
+\*------------------------------------*/
+
+%section-wrapper {
+  padding: $vertical-offset-desktop 2rem;
+
+  @include media('<=tablet') {
+    padding: $vertical-offset-tablet 2rem;
+  }
+
+  @include media('<=phone') {
+    padding: $vertical-offset-phone 2rem;
+  }
+}
+
+%content-wrapper {
+  width: 100%;
+  max-width: 114rem;
+  margin: 0 auto;
+}
+
+.header,
+section {
+  @extend %section-wrapper;
+
+  & .wrap {
+    @extend %content-wrapper;
+  }
+}
