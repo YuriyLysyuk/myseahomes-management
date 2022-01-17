@@ -132,3 +132,69 @@ section {
   }
 }
 
+/*------------------------------------*\
+  #SECTION MORE
+\*------------------------------------*/
+
+.more {
+  position: relative;
+
+  & .wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: $gap * 4;
+
+    & > * {
+      grid-column: 2 / 3;
+
+      @include media('<=tablet') {
+        grid-column: 2 / 4;
+      }
+      @include media('<=phone') {
+        grid-column: 1 / 4;
+        text-align: center;
+      }
+    }
+
+    @include media('<=tablet') {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    background-image: url(../img/notebook2.jpg);
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    left: 0;
+    top: $vertical-offset-desktop;
+    width: 100%;
+    height: 100%;
+    padding-top: 26.87%; // 416 / 774 * 100 / 2
+    z-index: -1;
+
+    @include media('<=tablet') {
+      background-position: left -70% top;
+      background-size: 60%;
+      top: $vertical-offset-tablet;
+    }
+
+    @include media('<=phone') {
+      background-image: none;
+      top: $vertical-offset-phone;
+    }
+  }
+
+  & h2 {
+    margin-top: 0;
+  }
+
+  & .form {
+    @include media('<=phone') {
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
