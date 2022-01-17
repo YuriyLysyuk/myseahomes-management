@@ -21,7 +21,8 @@
 }
 
 .header,
-section {
+section,
+.footer {
   @extend %section-wrapper;
 
   & .wrap {
@@ -471,6 +472,188 @@ section {
       @include media('<=tablet') {
         grid-column: 1 / 2;
       }
+    }
+  }
+}
+
+/*------------------------------------*\
+  #PAGE FOOTER
+\*------------------------------------*/
+
+.footer {
+  padding-bottom: 0;
+  font-weight: 500;
+  font-size: 2.4rem;
+
+  &__grid {
+    @extend %bordered-style-2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0 $gap;
+
+    @include media('<=tablet') {
+      grid-template-columns: 1fr 1fr;
+      grid-row-gap: $gap;
+    }
+
+    @include media('<=phone') {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+
+    & > * {
+      margin: 0;
+    }
+  }
+
+  &__title {
+    font-size: 4.8rem;
+
+    @include media('<=tablet') {
+      order: 1;
+    }
+
+    @include media('<=phone') {
+      align-items: center;
+    }
+  }
+
+  &__nav {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    gap: 1rem;
+
+    @include media('<=tablet') {
+      order: 2;
+      grid-row: 1 / 4;
+    }
+
+    @include media('<=phone') {
+      order: 5;
+      grid-column: auto;
+      grid-row: auto;
+      align-items: center;
+    }
+  }
+
+  &__social {
+    gap: 1rem;
+
+    &__grid {
+      font-weight: 400;
+      display: flex;
+      gap: 1rem;
+
+      & > a {
+        display: flex;
+        width: 4rem;
+        height: 4rem;
+        font-size: 2.6rem;
+        border-radius: 50%;
+
+        @extend %animated;
+
+        &:hover {
+          color: $white;
+        }
+
+        & > svg {
+          margin: auto;
+        }
+
+        &.instagram {
+          background-color: #c13584;
+        }
+
+        &.facebook {
+          background-color: #3b5998;
+        }
+
+        &.telegram {
+          background-color: #0088cc;
+        }
+
+        &.viber {
+          background-color: #59267c;
+        }
+
+        &.whatsapp {
+          background-color: #25d366;
+        }
+      }
+    }
+
+    @include media('<=tablet') {
+      order: 3;
+      grid-column: 1 / 2;
+    }
+
+    @include media('<=phone') {
+      order: 2;
+      align-items: center;
+    }
+  }
+
+  &__phone {
+    gap: 1rem;
+    align-items: flex-end;
+
+    & > .btn {
+      font-size: 2.4rem;
+    }
+
+    @include media('<=tablet') {
+      order: 4;
+      grid-column: 1 / 2;
+      align-items: flex-start;
+    }
+
+    @include media('<=phone') {
+      order: 3;
+      align-items: center;
+    }
+  }
+
+  &__copyrights {
+    font-size: 1.8rem;
+    gap: 1rem;
+
+    @include media('<=tablet') {
+      order: 6;
+      grid-column: 1 / 3;
+    }
+
+    @include media('<=phone') {
+      order: 6;
+      grid-column: auto;
+      text-align: center;
+    }
+  }
+
+  &__address {
+    grid-column: 3 / 5;
+    justify-content: flex-end;
+    text-align: right;
+
+    & svg {
+      color: map_get($brand_colors, accent);
+    }
+
+    @include media('<=tablet') {
+      order: 5;
+      grid-column: 1 / 3;
+      text-align: left;
+    }
+
+    @include media('<=phone') {
+      order: 4;
+      grid-column: auto;
+      text-align: center;
     }
   }
 }
