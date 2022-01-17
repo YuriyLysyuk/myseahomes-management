@@ -1,0 +1,37 @@
+/*------------------------------------*\
+  #Global
+\*------------------------------------*/
+
+/**
+ * Colors
+ */
+
+$white: #fff;
+$darkest-grey: #1c222a;
+$darker-grey: #6a655d;
+$lighter-grey: #dcdcdc;
+$orange: #edb021;
+$dark-orange: #ff8947;
+$blue: #008dd2;
+$red: tomato;
+
+$brand-colors: (
+  darkest: $darkest-grey,
+  darker: $darker-grey,
+  lighter: $lighter-grey,
+  accent: $orange,
+);
+
+$margin: 1rem;
+$margin-2x: 2rem;
+$margin-3x: 3rem;
+$margin-4x: 4rem;
+
+$gap: $margin-4x;
+
+$vertical-offset-desktop: 10rem;
+$vertical-offset-tablet: 5rem;
+$vertical-offset-phone: 4rem;
+
+$border-radius: 10rem;
+
