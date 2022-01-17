@@ -436,3 +436,30 @@ section {
   }
 }
 
+/*------------------------------------*\
+  #SECTION WHY WE
+\*------------------------------------*/
+.why-we {
+  & h2 {
+    margin-bottom: 4.5rem;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+    grid-gap: $gap;
+  }
+
+  &__item {
+    &--bordered {
+      @extend %bordered-style-2;
+    }
+
+    &--last {
+      grid-column: 2 / 3;
+
+      @include media('<=tablet') {
+        grid-column: 1 / 2;
+      }
+    }
+  }
+}
