@@ -68,3 +68,20 @@ gulp.task(
   'default',
   gulp.parallel('styles', 'scripts', 'browser-sync', 'watch')
 );
+
+gulp.task('deploy', function () {
+  return gulp.src('app/**').pipe(
+    rsync({
+      root: 'app/',
+      hostname: 'myseahf2@myseahf2.beget.tech',
+      destination: 'myseahomes.com/public_html/boost/',
+      include: ['*.htaccess'], // Includes files to deploy
+      exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
+      recursive: true,
+      archive: true,
+      silent: false,
+      compress: true,
+      progress: true,
+    })
+  );
+});
