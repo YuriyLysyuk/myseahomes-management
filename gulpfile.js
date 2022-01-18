@@ -5,7 +5,8 @@ var gulp = require('gulp'),
   rename = require('gulp-rename'),
   browserSync = require('browser-sync').create(),
   concat = require('gulp-concat'),
-  uglify = require('gulp-uglify-es').default;
+  uglify = require('gulp-uglify-es').default,
+  rsync = require('gulp-rsync');
 
 gulp.task('browser-sync', function () {
   browserSync.init({
