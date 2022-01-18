@@ -54,7 +54,7 @@
             >мы вернем вам деньги</span
           >
         </p>
-        <button class="btn">Оставить заявку</button>
+        <button class="btn trigger">Оставить заявку</button>
       </div>
     </section>
 
@@ -117,7 +117,7 @@
               <span>и наконец главное...</span><br />
               Мы делаем много денег
             </div>
-            <button class="btn btn--small">Оставить заявку</button>
+            <button class="btn btn--small trigger">Оставить заявку</button>
           </div>
         </div>
       </div>
@@ -172,7 +172,7 @@
               позволяет ориентироваться не на цену лида, а на конечную
               стоимость.
             </p>
-            <button class="btn">Узнать подробнее</button>
+            <button class="btn trigger">Узнать подробнее</button>
           </div>
         </div>
         <div class="services__item">
@@ -188,7 +188,7 @@
               до покупки. Вы заплатили деньги, чтобы он перешел на сайт и
               оставил заявку, значит нужно работать с ним и "дожимать".
             </p>
-            <button class="btn">Узнать подробнее</button>
+            <button class="btn trigger">Узнать подробнее</button>
           </div>
         </div>
       </div>
@@ -410,6 +410,28 @@
         </div>
       </div>
     </footer>
+
+    <div id="modal">
+      <form action="#" class="form">
+        <input
+          type="text"
+          name="name"
+          placeholder="Введите ваше имя"
+          required
+          class="form__control form__control--wide"
+          autocomplete="off"
+        />
+        <input
+          type="tel"
+          name="phone"
+          placeholder="Контактный телефон"
+          required
+          class="form__control form__control--wide"
+          autocomplete="off"
+        />
+        <button class="btn btn--wide" type="submit">Оставить заявку</button>
+      </form>
+    </div>
 
     <script
       defer
