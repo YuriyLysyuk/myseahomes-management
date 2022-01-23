@@ -3,6 +3,10 @@
 require 'phpLibs/php-multilang/MultiLang.php'; 
 $ml = new MultiLang();
 
+if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
+  $ml->setLanguage('RU');
+}
+
 ?>
 
 <!DOCTYPE html>
