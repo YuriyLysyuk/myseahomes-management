@@ -7,4 +7,4 @@
 /**/Thumbs.db
 /**/*.DS_Store
 /**/debug.log
-/app/phpLibs/php-multilang/languages/RU.php
+app/js/libs.js
