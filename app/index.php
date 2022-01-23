@@ -110,8 +110,7 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
     <section class="differents">
       <div class="wrap">
         <h2 class="uppercased">
-          Чем мы <br /><span class="text--accented">отличаемся</span> от
-          конкурентов?
+        <?= $ml->tr('How we get') ?> <br /><span class="text--accented"><?= $ml->tr('different') ?></span> <?= $ml->tr('from competitors') ?>?
         </h2>
         <div class="differents__grid">
           <div class="differents__item">
@@ -119,9 +118,7 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
               0<span class="text--accented">1</span>
             </div>
             <div class="differents__item__desc">
-              Заказав у нас трафик, вы получите полноценную маркетинговую
-              ревизию бизнеса с рекомендациями, начиная от сайта, заканчивая
-              оффлайном.
+              <?= $ml->tr('Order trafficking from us and you will receive a full-fledged marketing audit of your business with recommendations, from your website to offline activities.') ?>
             </div>
           </div>
           <div class="differents__item">
@@ -129,9 +126,7 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
               0<span class="text--accented">2</span>
             </div>
             <div class="differents__item__desc">
-              24/7. Мы работаем с разными странами и нам приходится
-              подстраиваться под время клиентов. Мы создаем чат со специалистами
-              и ваш вопрос не останется без ответа дольше часа.
+              <?= $ml->tr('24/7. Our clients are located in many different countries so we have to be available when it is convenient to the clients. We start a chat with experts and your question will not be left unanswered for more than an hour.') ?>
             </div>
           </div>
           <div class="differents__item">
@@ -139,9 +134,7 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
               0<span class="text--accented">3</span>
             </div>
             <div class="differents__item__desc">
-              Мы постоянно развиваемся: посещаем топовые мастер-классы, читаем
-              книги, учимся. Что это дает вам? Команду людей, которые не стоят
-              на месте, внедряют в бизнес новые инструменты маркетинга.
+              <?= $ml->tr('We are constantly updating our platform: attend most prestigious master classes, educate ourselves and study a lot. How does it affect you? You are working with a team of people who always move on, who are introducing new marketing tools to the business.') ?>
             </div>
           </div>
           <div class="differents__item">
@@ -149,8 +142,7 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
               0<span class="text--accented">4</span>
             </div>
             <div class="differents__item__desc">
-              Мыслим цифрами, поэтому БЕСПЛАТНО даем аналитику и CRM для анализа
-              каждой заявки и настроенной аудитории.
+              <?= $ml->tr('We think in the way of numbers, that is why we offer FREE analytics and CRM to analyze each application and the configured audience.') ?>
             </div>
           </div>
           <div class="differents__item">
@@ -158,15 +150,15 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
               0<span class="text--accented">5</span>
             </div>
             <div class="differents__item__desc">
-              Ориентируемся не на цену заявки, а на итог — заказ.
+              <?= $ml->tr('We focus not on the price of application but on result – the order.') ?>
             </div>
           </div>
           <div class="differents__item differents__item--bordered">
             <div class="differents__item__title text--uppercased">
-              <span>и наконец главное...</span><br />
-              Мы делаем много денег
+              <span><?= $ml->tr('and finally most importantly') ?>...</span><br />
+              <?= $ml->tr('we make lots of money') ?>!
             </div>
-            <button class="btn btn--small trigger">Оставить заявку</button>
+            <button class="btn btn--small trigger"><?= $ml->tr('Submit application') ?></button>
           </div>
         </div>
       </div>
