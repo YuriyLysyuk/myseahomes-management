@@ -1,0 +1,3 @@
+[submodule "app/phpLibs/php-multilang"]
+	path = app/phpLibs/php-multilang
+	url = https://github.com/williamcjacobs/php-multilang.git
