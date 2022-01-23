@@ -93,18 +93,17 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
     <section class="hero">
       <div class="wrap">
         <h1>
-          <span class="hero__subtitle">Отдел маркетинга</span><br />
+          <span class="hero__subtitle"><?= $ml->tr('Marketing department') ?></span><br />
           <span class="text--accented">My</span>seahomes
         </h1>
         <p class="hero__desc">
-          <span class="text--accented">/</span> Первые лиды на второй день
-          работы <br />или
+          <span class="text--accented">/</span> <?= $ml->tr('Start to receive first leads on the second day of work') ?> <br> <?= $ml->tr('or') ?>
           <span
             class="text--accented text--uppercased text--underlined text--bolded"
-            >мы вернем вам деньги</span
+            ><?= $ml->tr('we will refund your money') ?></span
           >
         </p>
-        <button class="btn trigger">Оставить заявку</button>
+        <button class="btn trigger"><?= $ml->tr('Submit application') ?></button>
       </div>
     </section>
 
