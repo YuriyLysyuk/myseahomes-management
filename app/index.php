@@ -1,3 +1,10 @@
+<?php  
+
+require 'phpLibs/php-multilang/MultiLang.php'; 
+$ml = new MultiLang();
+
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
   <head>
