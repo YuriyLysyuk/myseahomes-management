@@ -25,6 +25,11 @@ $RU =  [
   'we focus not on the price of application but on result – the order.'=>'Ориентируемся не на цену заявки, а на итог — заказ.',
   'and finally most importantly'=>'и наконец главное',
   'we make lots of money'=>'Мы делаем много денег',
+  'we do more'=>'Делаем больше',
+  'than what is required by our duties'=>'чем требуют наши обязанности',
+  'fill out the form below and we will make an analysis and an approximate forecast based on the results'=>'Заполните форму ниже и мы сделаем анализ и приблизительный прогноз по результатам',
+  'enter your name'=>'Введите ваше имя',
+  'enter your phone'=>'Контактный телефон',
 ];
 
 /** Not Yet Translated **/

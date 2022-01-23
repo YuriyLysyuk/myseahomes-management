@@ -167,18 +167,16 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
     <section class="more">
       <div class="wrap">
         <h2 class="text--uppercased heading--smaller">
-          <span class="text--accented">Делаем больше, </span><br />чем требуют
-          наши обязанности!
+          <span class="text--accented"><?= $ml->tr('We do more') ?>, </span><br /><?= $ml->tr('than what is required by our duties') ?>!
         </h2>
         <div class="text--smaller">
-          Заполните форму ниже и мы сделаем анализ и приблизительный прогноз по
-          результатам
+          <?= $ml->tr('Fill out the form below and we will make an analysis and an approximate forecast based on the results') ?>
         </div>
         <form action="#" class="form">
           <input
             type="text"
             name="name"
-            placeholder="Введите ваше имя"
+            placeholder="<?= $ml->tr('Enter your name') ?>"
             required
             class="form__control form__control--wide"
             autocomplete="off"
@@ -186,12 +184,12 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
           <input
             type="tel"
             name="phone"
-            placeholder="Контактный телефон"
+            placeholder="<?= $ml->tr('Enter your phone') ?>"
             required
             class="form__control form__control--wide"
             autocomplete="off"
           />
-          <button class="btn btn--wide" type="submit">Оставить заявку</button>
+          <button class="btn btn--wide" type="submit"><?= $ml->tr('Submit application') ?></button>
         </form>
       </div>
     </section>
