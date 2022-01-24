@@ -229,76 +229,74 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
     <section id="offer" class="offer">
       <div class="wrap">
         <h2>
-          Что мы <span class="text--accented text--underlined">предлагаем</span>
+          <?= $ml->tr('What we') ?> <span class="text--accented text--underlined"><?= $ml->tr('offer') ?></span>
         </h2>
         <div class="offer__grid">
           <div class="offer__item line__bottom line__bottom--first">
             <i class="fas fa-chart-line"></i>
             <h3>
-              <span class="text--accented">Анализ бизнеса</span>
-              и конкурентов
+              <span class="text--accented"><?= $ml->tr('Analisys') ?></span>
+              <?= $ml->tr('business and competitor') ?>
             </h3>
             <p>
-              Даем советы по улучшению воронки/лид магнита и в целом вашей
-              бизнес модели
+              <?= $ml->tr('We give advice on improving the funnel / lead magnet and your business model in general') ?>
             </p>
             <div class="offer__number"><span>1</span></div>
           </div>
           <div class="offer__item line__bottom">
             <i class="far fa-user-circle"></i>
             <h3>
-              <span class="text--accented">Ментальная</span>
-              карта
+              <span class="text--accented"><?= $ml->tr('Mental') ?></span>
+              <?= $ml->tr('map') ?>
             </h3>
-            <p>Наглядно предоставляем план работ</p>
+            <p><?= $ml->tr('Visualizing of work plan') ?></p>
             <div class="offer__number"><span>2</span></div>
           </div>
           <div class="offer__item line__bottom line__bottom--last">
             <i class="fas fa-sliders-h"></i>
             <h3>
-              <span class="text--accented">Подключение метрик</span>
-              к вашему сайту
+              <span class="text--accented"><?= $ml->tr('Connecting metrics') ?></span>
+              <?= $ml->tr('to your website') ?>
             </h3>
-            <p>для полного анализа поведения целевого трафика</p>
+            <p><?= $ml->tr('To provide complete analysis of targeted traffic behavior') ?></p>
             <div class="offer__number"><span>3</span></div>
           </div>
           <div class="offer__item line__bottom">
             <i class="fab fa-instagram"></i>
-            <h3><span class="text--accented">Масштабирование</span></h3>
-            <p>Проработка новых источников трафика</p>
+            <h3><span class="text--accented"><?= $ml->tr('Scaling') ?></span></h3>
+            <p><?= $ml->tr('Developing of new traffic sources') ?></p>
             <div class="offer__number"><span>6</span></div>
           </div>
           <div class="offer__item line__bottom">
             <i class="fas fa-layer-group"></i>
-            <h3><span class="text--accented">Ремаркетинг</span></h3>
-            <p>Дожимаем теплую аудиторию в покупку</p>
+            <h3><span class="text--accented"><?= $ml->tr('Re-marketing') ?></span></h3>
+            <p><?= $ml->tr('Convert generally interested clients into buying customers') ?></p>
             <div class="offer__number"><span>5</span></div>
           </div>
           <div class="offer__item line__bottom line__bottom--last line__right">
             <i class="fab fa-sketch"></i>
             <h3>
-              <span class="text--accented">Разработка</span>
-              дизайнерских креативов
+              <span class="text--accented"><?= $ml->tr('Development of') ?></span>
+              <?= $ml->tr('designs') ?>
             </h3>
-            <p>Уникальные изображения/видео</p>
+            <p><?= $ml->tr('Unique images and videos') ?></p>
             <div class="offer__number"><span>4</span></div>
           </div>
           <div class="offer__item line__bottom line__left">
             <i class="fas fa-check-double"></i>
             <h3>
-              <span class="text--accented">Промежуточный</span>
-              анализ
+              <span class="text--accented"><?= $ml->tr('Interim') ?></span>
+              <?= $ml->tr('analisys') ?>
             </h3>
-            <p>Выявления слабых мест и оптимизация рекламной кампании</p>
+            <p><?= $ml->tr('Identification of weaknesses and optimization of advertising campaign') ?></p>
             <div class="offer__number"><span>7</span></div>
           </div>
           <div class="offer__item line__bottom">
             <i class="fas fa-cog"></i>
             <h3>
-              <span class="text--accented">Настройка</span> тестовой рекламной
-              кампании
+              <span class="text--accented"><?= $ml->tr('Setting up the') ?></span> <?= $ml->tr('test ad compaing') ?>
             </h3>
-            <p>Сегментация аудитории и тест креативов</p>
+            <p><?= $ml->tr('Audience segmentation and testing up creatives') ?></p>
             <div class="offer__number"><span>8</span></div>
           </div>
           <div
@@ -306,8 +304,8 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
           >
             <div class="bg">
               <h3>
-                <span class="text--accented">Отбивайтесь</span><br />
-                от клиентов
+                <span class="text--accented"><?= $ml->tr('Get tons') ?></span><br />
+                <?= $ml->tr('of clients') ?>
               </h3>
             </div>
             <div class="offer__number">
