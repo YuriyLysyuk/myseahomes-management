@@ -3,8 +3,6 @@
 $(document).ready(function () {
   // Modal
   let modalForm = $('#modal').iziModal({
-    title: 'Оставьте заявку',
-    subtitle: 'Мы перезвоним вам в ближайшие 15 минут',
     background: '#1c222a',
     headerColor: '#1c222a',
     icon: 'fas fa-thumbs-up',
@@ -14,8 +12,6 @@ $(document).ready(function () {
   });
 
   let modalThanks = $('#thank-you').iziModal({
-    title: 'Спасибо!',
-    subtitle: 'Ожидайте звонка в течении 15 минут',
     background: '#1c222a',
     headerColor: '#1c222a',
     icon: 'fas fa-thumbs-up',

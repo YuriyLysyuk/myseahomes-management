@@ -436,7 +436,7 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
       </div>
     </footer>
 
-    <div id="modal">
+    <div id="modal" data-izimodal-title="Оставьте заявку" data-izimodal-subtitle="Мы перезвоним вам в ближайшие 15 минут">
       <form action="#" class="form">
         <input
           type="text"
@@ -458,7 +458,7 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
       </form>
     </div>
 
-    <div id="thank-you"></div>
+    <div id="thank-you" data-izimodal-title="Спасибо!" data-izimodal-subtitle="Ожидайте звонка в течении 15 минут"></div>
 
     <script
       defer
