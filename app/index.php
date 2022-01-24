@@ -378,13 +378,13 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
           </p>
         </div>
         <div class="footer__item footer__nav">
-          <a href="#top">Главная</a>
-          <a href="#services">Наши услуги</a>
-          <a href="#offer">Что мы предлагаем</a>
-          <a href="#why-we">Почему мы</a>
+          <a href="#top"><?= $ml->tr('Main') ?></a>
+          <a href="#services"><?= $ml->tr('Our services') ?></a>
+          <a href="#offer"><?= $ml->tr('What we offer') ?></a>
+          <a href="#why-we"><?= $ml->tr('Why we') ?></a>
         </div>
         <div class="footer__item footer__social">
-          <p>Ищите нас в соц сетях</p>
+          <p><?= $ml->tr('Look for us in social networks') ?></p>
           <div class="footer__social__grid">
             <a
               href="https://www.instagram.com/targetolog_ustinov/"
@@ -417,15 +417,15 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
         </div>
         <div class="footer__item footer__phone">
           <a href="tel:+905338365211" class="btn">+905338365211</a>
-          <p>Звоните, мы на связи</p>
+          <p><?= $ml->tr('Call us, we are in touch') ?></p>
         </div>
         <div class="footer__item footer__copyrights">
           <a
             href="https://www.myseahomes.com/privacy-policy.html"
             target="_blank"
-            >Политика конфиденциальности</a
+            ><?= $ml->tr('Privacy Policy') ?></a
           >
-          <p>Все права защищены <br />© 2022</p>
+          <p><?= $ml->tr('All rights reserved') ?> <br />© 2022</p>
         </div>
         <div class="footer__item footer__address">
           <p>

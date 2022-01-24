@@ -86,6 +86,14 @@ $RU =  [
   'and yes, we make videos)'=>'И да, мы работаем с видео)',
   'our team is available'=>'Наша команда на связи',
   'and we\'re just good guys'=>'А еще мы просто хорошие ребята)',
+  'main'=>'Главная',
+  'our services'=>'Наши услуги',
+  'what we offer'=>'Что мы предлагаем',
+  'why we'=>'Почему мы',
+  'look for us in social networks'=>'Ищите нас в соц сетях',
+  'call us, we are in touch'=>'Звоните, мы на связи',
+  'privacy policy'=>'Политика конфиденциальности',
+  'all rights reserved'=>'Все права защищены',
 ];
 
 /** Not Yet Translated **/
