@@ -196,38 +196,31 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
 
     <section id="services" class="services">
       <h2 class="text--centered">
-        Наши <span class="text--accented">Услуги</span>
+        <?= $ml->tr('Our') ?> <span class="text--accented"><?= $ml->tr('services') ?></span>
       </h2>
       <div class="wrap">
         <div class="services__item">
           <div class="img__wrap">
-            <img src="img/services-1.jpg" alt="Таргетинговая реклама" />
+            <img src="img/services-1.jpg" alt="<?= $ml->tr('Targeted') ?> <?= $ml->tr('advertisement') ?>" />
           </div>
           <div class="services__box">
-            <h3><span class="text--accented">Таргетинговая</span> реклама</h3>
+            <h3><span class="text--accented"><?= $ml->tr('Targeted') ?></span> <?= $ml->tr('advertisement') ?></h3>
             <p>
-              Мы делаем полный анализ посадочных страниц, подключаем аналитику и
-              AmoCRM для анализа рекламных объявлений и каждой заявки. Это
-              позволяет ориентироваться не на цену лида, а на конечную
-              стоимость.
+              <?= $ml->tr('We do a full analysis of landing pages, connect analytics and AmoCRM to analyze advertisements and each enquiry. This allows you to focus not on the price of the lead, but on the final cost.') ?>
             </p>
-            <button class="btn trigger">Узнать подробнее</button>
+            <button class="btn trigger"><?= $ml->tr('Learn more') ?></button>
           </div>
         </div>
         <div class="services__item">
           <div class="img__wrap">
-            <img src="img/services-2.jpg" alt="Воронки" />
+            <img src="img/services-2.jpg" alt="<?= $ml->tr('Funnel') ?>" />
           </div>
           <div class="services__box">
-            <h3><span class="text--accented">Воронки</span></h3>
+            <h3><span class="text--accented"><?= $ml->tr('Funnel') ?></span></h3>
             <p>
-              Разрабатываем автоматизированные маркетинговые воронки с
-              подключением чат-ботов. Это не только разгружает отдел продаж, но
-              и позволяет прогревать каждого потенциального клиента, доводя его
-              до покупки. Вы заплатили деньги, чтобы он перешел на сайт и
-              оставил заявку, значит нужно работать с ним и "дожимать".
+              <?= $ml->tr('We develop automated marketing funnels with the connection of chat bots. This not only unloads the sales department, but also allows you to warm up each potential client, bringing him to a purchase. You paid money so that he went to the site and left a request, so you need to work with him and "squeeze".') ?>
             </p>
-            <button class="btn trigger">Узнать подробнее</button>
+            <button class="btn trigger"><?= $ml->tr('Learn more') ?></button>
           </div>
         </div>
       </div>

@@ -30,6 +30,15 @@ $RU =  [
   'fill out the form below and we will make an analysis and an approximate forecast based on the results'=>'Заполните форму ниже и мы сделаем анализ и приблизительный прогноз по результатам',
   'enter your name'=>'Введите ваше имя',
   'enter your phone'=>'Контактный телефон',
+  'our'=>'Наши',
+  'services'=>'услуги',
+  'targeted'=>'Таргетинговая',
+  'advertisement'=>'реклама',
+  'we do a full analysis of landing pages, connect analytics and amocrm to analyze advertisements and each enquiry. this allows you to focus not on the price of the lead, but on the final cost.'=>'Мы делаем полный анализ посадочных страниц, подключаем аналитику и AmoCRM для анализа рекламных объявлений и каждой заявки. Это
+  позволяет ориентироваться не на цену лида, а на конечную стоимость.',
+  'learn more'=>'Узнать подробнее',
+  'funnel'=>'Воронки',
+  'we develop automated marketing funnels with the connection of chat bots. this not only unloads the sales department, but also allows you to warm up each potential client, bringing him to a purchase. you paid money so that he went to the site and left a request, so you need to work with him and "squeeze".'=>'Разрабатываем автоматизированные маркетинговые воронки с подключением чат-ботов. Это не только разгружает отдел продаж, но и позволяет прогревать каждого потенциального клиента, доводя его до покупки. Вы заплатили деньги, чтобы он перешел на сайт и оставил заявку, значит нужно работать с ним и "дожимать".',
 ];
 
 /** Not Yet Translated **/
