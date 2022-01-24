@@ -436,12 +436,12 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
       </div>
     </footer>
 
-    <div id="modal" data-izimodal-title="Оставьте заявку" data-izimodal-subtitle="Мы перезвоним вам в ближайшие 15 минут">
+    <div id="modal" data-izimodal-title="<?= $ml->tr('Leave a request') ?>" data-izimodal-subtitle="<?= $ml->tr('We will call you back in the next 15 minutes') ?>">
       <form action="#" class="form">
         <input
           type="text"
           name="name"
-          placeholder="Введите ваше имя"
+          placeholder="<?= $ml->tr('Enter your name') ?>"
           required
           class="form__control form__control--wide"
           autocomplete="off"
@@ -449,16 +449,16 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
         <input
           type="tel"
           name="phone"
-          placeholder="Контактный телефон"
+          placeholder="<?= $ml->tr('Enter your phone') ?>"
           required
           class="form__control form__control--wide"
           autocomplete="off"
         />
-        <button class="btn btn--wide" type="submit">Оставить заявку</button>
+        <button class="btn btn--wide" type="submit"><?= $ml->tr('Submit application') ?></button>
       </form>
     </div>
 
-    <div id="thank-you" data-izimodal-title="Спасибо!" data-izimodal-subtitle="Ожидайте звонка в течении 15 минут"></div>
+    <div id="thank-you" data-izimodal-title="<?= $ml->tr('Thanks') ?>!" data-izimodal-subtitle="<?= $ml->tr('Expect a call within 15 minutes') ?>"></div>
 
     <script
       defer

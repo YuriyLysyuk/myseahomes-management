@@ -94,6 +94,10 @@ $RU =  [
   'call us, we are in touch'=>'Звоните, мы на связи',
   'privacy policy'=>'Политика конфиденциальности',
   'all rights reserved'=>'Все права защищены',
+  'leave a request'=>'Оставьте заявку',
+  'we will call you back in the next 15 minutes'=>'Мы перезвоним вам в ближайшие 15 минут',
+  'thanks'=>'Спасибо',
+  'expect a call within 15 minutes'=>'Ожидайте звонка в течении 15 минут',
 ];
 
 /** Not Yet Translated **/
