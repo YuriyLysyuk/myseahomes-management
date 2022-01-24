@@ -319,57 +319,52 @@ if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
     <section id="why-we" class="why-we">
       <div class="wrap">
         <h2 class="text--centered">
-          <span class="text--accented">Почему мы</span> а не кто-то другой
+          <span class="text--accented"><?= $ml->tr('Why us') ?></span> <?= $ml->tr('and not someone else') ?>
         </h2>
         <div class="why-we__grid">
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented">Мы пропишем</span> маркетинговую
-              стратегию
+              <span class="text--accented"><?= $ml->tr('We create') ?></span> <?= $ml->tr('full marketing strategy') ?>
             </p>
-            <p>Именно под Вашу нишу и Вашу бизнес-модель</p>
+            <p><?= $ml->tr('Tailored to your niche and business-model') ?></p>
           </div>
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented">Комплексный</span> маркетинговый
-              подход
+              <span class="text--accented"><?= $ml->tr('Complex') ?></span> <?= $ml->tr('marketing approach') ?>
             </p>
             <p>
-              Поэтому будьте готовы, что помимо рекламы мы настроим Вам еще
-              "кучу" полезных инструментов
+              <?= $ml->tr('In addition to advertisements we will set up a bunch of other useful tools for you') ?>
             </p>
           </div>
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented">Усиливаем пиксель</span> Вашего сайта
+              <span class="text--accented"><?= $ml->tr('We strengthen a pixel') ?></span> <?= $ml->tr('of your website') ?>
             </p>
-            <p>Чтобы Вы получали только качественных клиентов</p>
+            <p><?= $ml->tr('So that you get only quality customers') ?></p>
           </div>
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented">Мы работаем</span> на окупаемость
+              <span class="text--accented"><?= $ml->tr('We are aiming') ?></span> <?= $ml->tr('on a quick payback') ?>
             </p>
-            <p>И на Ваш ROI, а не за лиды и CTR</p>
+            <p><?= $ml->tr('For your ROI and not just for leads and CTR') ?></p>
           </div>
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented">Проработаем гибкую</span> стратегию
-              ремаркетинга
+              <span class="text--accented"><?= $ml->tr('We develop flexible') ?></span> <?= $ml->tr('marketing strategy') ?>
             </p>
-            <p>С помощью эффективной рекламной кампании</p>
+            <p><?= $ml->tr('With an effective advertising campaign') ?></p>
           </div>
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented">Создаем</span> дизайнерские креативы
-              в фирменном стиле
+              <span class="text--accented"><?= $ml->tr('We create') ?></span> <?= $ml->tr('design creatives in your own corporate style') ?>
             </p>
-            <p>И да, мы работаем с видео)</p>
+            <p><?= $ml->tr('And yes, we make videos)') ?></p>
           </div>
           <div class="why-we__item why-we__item--bordered why-we__item--last">
             <p>
-              <span class="text--accented">Наша команда на связи</span> 24/7
+              <span class="text--accented"><?= $ml->tr('Our team is available') ?></span> 24/7
             </p>
-            <p>А еще мы просто хорошие ребята)</p>
+            <p><?= $ml->tr('And we\'re just good guys') ?></p>
           </div>
         </div>
       </div>
