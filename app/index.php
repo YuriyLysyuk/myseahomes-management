@@ -15,10 +15,10 @@ if ((($_GET && $_GET['lang'] && $_GET['lang'] === 'ru'))
   <head>
     <meta charset="utf-8" />
 
-    <title>Отдел маркетинга Myseahomes</title>
+    <title><?= $ml->tr('Marketing department') ?> Myseahomes</title>
     <meta
       name="description"
-      content="Первые лиды на второй день работы или мы вернем вам деньги"
+      content="<?= $ml->tr('Start to receive first leads on the second day of work') ?> <?= $ml->tr('or') ?> <?= $ml->tr('we will refund your money') ?>"
     />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
