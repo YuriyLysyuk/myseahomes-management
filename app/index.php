@@ -87,7 +87,7 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
   <body>
     <header id="top" class="header">
       <div class="wrap">
-        <img class="logo" src="img/logo.png" alt="Myseahomes logo" />
+        <a href="/"><img class="logo" src="img/logo.png" alt="Myseahomes logo" /></a>
       </div>
     </header>
 
