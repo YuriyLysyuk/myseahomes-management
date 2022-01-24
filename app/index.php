@@ -3,9 +3,10 @@
 require 'phpLibs/php-multilang/MultiLang.php'; 
 $ml = new MultiLang();
 
-if ($_GET && ($_GET['lang']) && ($_GET['lang'] === 'ru')) {
+if ((($_GET && $_GET['lang'] && $_GET['lang'] === 'ru'))
+  || ($_COOKIE && $_COOKIE['rl_lang_front'] && $_COOKIE['rl_lang_front'] === 'ru')) {
   $ml->setLanguage('RU');
-}
+};
 
 ?>
 
