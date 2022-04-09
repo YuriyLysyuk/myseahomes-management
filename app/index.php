@@ -94,10 +94,10 @@ $ml = new MultiLang();
     <section class="hero">
       <div class="wrap">
         <h1>
-          <span class="hero__subtitle" style="color: #fff">Отдел менеджмента</span><br />
+          <span class="hero__subtitle">Отдел менеджмента</span><br />
           <span class="text--accented">My</span>seahomes
         </h1>
-        <p class="hero__desc" style="font-size: 2.4rem;">
+        <p class="hero__desc">
           <span class="text--accented">/</span> Превратите свою квартиру на Кипре в номер <br> 
           <span
             class="text--accented text--uppercased text--underlined text--bolded"
@@ -154,9 +154,9 @@ $ml = new MultiLang();
               Ваша квартира сохранится в отличном состоянии. Вы будете получать своевременную и полную отчетность по заселениям. Вы всегда сможете приехать в отпуск в готовую для проживания квартиру.
             </div>
           </div>
-          <div class="differents__item differents__item--bordered" style="justify-content: center;gap: 1rem;">
+          <div class="differents__item differents__item--bordered">
             <div class="differents__item__title text--uppercased">
-              <span style="color:#edb021;">и на конец, главное...</span><br />
+              <span>и на конец, главное...</span><br />
               мы делаем много денег !
             </div>
             <button class="btn btn--small trigger">оставить заявку</button>
