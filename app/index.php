@@ -3,10 +3,10 @@
 require 'phpLibs/php-multilang/MultiLang.php'; 
 $ml = new MultiLang();
 
-if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
-  || (isset($_COOKIE) && isset($_COOKIE['rl_lang_front']) && $_COOKIE['rl_lang_front'] === 'ru')) {
-  $ml->setLanguage('RU');
-};
+// if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
+//   || (isset($_COOKIE) && isset($_COOKIE['rl_lang_front']) && $_COOKIE['rl_lang_front'] === 'ru')) {
+//   $ml->setLanguage('RU');
+// };
 
 ?>
 
@@ -15,10 +15,10 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
   <head>
     <meta charset="utf-8" />
 
-    <title><?= $ml->tr('Marketing department') ?> Myseahomes</title>
+    <title>Отдел менеджмента Myseahomes</title>
     <meta
       name="description"
-      content="<?= $ml->tr('Start to receive first leads on the second day of work') ?> <?= $ml->tr('or') ?> <?= $ml->tr('we will refund your money') ?>"
+      content="Превратите свою квартиру в номер прибыльного апарт-отеля"
     />
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -94,24 +94,24 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
     <section class="hero">
       <div class="wrap">
         <h1>
-          <span class="hero__subtitle"><?= $ml->tr('Marketing department') ?></span><br />
+          <span class="hero__subtitle" style="color: #fff">Отдел менеджмента</span><br />
           <span class="text--accented">My</span>seahomes
         </h1>
-        <p class="hero__desc">
-          <span class="text--accented">/</span> <?= $ml->tr('Start to receive first leads on the second day of work') ?> <br> <?= $ml->tr('or') ?>
+        <p class="hero__desc" style="font-size: 2.4rem;">
+          <span class="text--accented">/</span> Превратите свою квартиру на Кипре в номер <br> 
           <span
             class="text--accented text--uppercased text--underlined text--bolded"
-            ><?= $ml->tr('we will refund your money') ?></span
+            >прибыльного апарт-отеля</span
           >
         </p>
-        <button class="btn trigger"><?= $ml->tr('Submit application') ?></button>
+        <button class="btn trigger">Оставить заявку</button>
       </div>
     </section>
 
     <section class="differents">
       <div class="wrap">
         <h2 class="uppercased">
-        <?= $ml->tr('How we get') ?> <br /><span class="text--accented"><?= $ml->tr('different') ?></span> <?= $ml->tr('from competitors') ?>?
+        Чем мы <br /><span class="text--accented">отличаемся</span> от конкурентов?
         </h2>
         <div class="differents__grid">
           <div class="differents__item">
@@ -119,7 +119,7 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
               0<span class="text--accented">1</span>
             </div>
             <div class="differents__item__desc">
-              <?= $ml->tr('Order trafficking from us and you will receive a full-fledged marketing audit of your business with recommendations, from your website to offline activities.') ?>
+              Обеспечиваем постоянную заполняемость за счет профессиональной рекламы.
             </div>
           </div>
           <div class="differents__item">
@@ -127,7 +127,7 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
               0<span class="text--accented">2</span>
             </div>
             <div class="differents__item__desc">
-              <?= $ml->tr('24/7. Our clients are located in many different countries so we have to be available when it is convenient to the clients. We start a chat with experts and your question will not be left unanswered for more than an hour.') ?>
+              Защищаем ваши интересы за счет регулярного контроля оплат, проверки состояния квартиры и юридического сопровождения.
             </div>
           </div>
           <div class="differents__item">
@@ -135,7 +135,7 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
               0<span class="text--accented">3</span>
             </div>
             <div class="differents__item__desc">
-              <?= $ml->tr('We are constantly updating our platform: attend most prestigious master classes, educate ourselves and study a lot. How does it affect you? You are working with a team of people who always move on, who are introducing new marketing tools to the business.') ?>
+              Увеличиваем доходность с помощью консьерж-сервиса и широкого спектра допуслуг.
             </div>
           </div>
           <div class="differents__item">
@@ -143,7 +143,7 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
               0<span class="text--accented">4</span>
             </div>
             <div class="differents__item__desc">
-              <?= $ml->tr('We think in the way of numbers, that is why we offer FREE analytics and CRM to analyze each application and the configured audience.') ?>
+              Мы работаем в сфере доверительного управления с 2015 года и знаем как быстро сдать апартаменты, виллу или бунгало на прозрачных и выгодных условиях для собственника.
             </div>
           </div>
           <div class="differents__item">
@@ -151,15 +151,15 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
               0<span class="text--accented">5</span>
             </div>
             <div class="differents__item__desc">
-              <?= $ml->tr('We focus not on the price of application but on result – the order.') ?>
+              Ваша квартира сохранится в отличном состоянии. Вы будете получать своевременную и полную отчетность по заселениям. Вы всегда сможете приехать в отпуск в готовую для проживания квартиру.
             </div>
           </div>
-          <div class="differents__item differents__item--bordered">
+          <div class="differents__item differents__item--bordered" style="justify-content: center;gap: 1rem;">
             <div class="differents__item__title text--uppercased">
-              <span><?= $ml->tr('and finally most importantly') ?>...</span><br />
-              <?= $ml->tr('we make lots of money') ?>!
+              <span style="color:#edb021;">и на конец, главное...</span><br />
+              мы делаем много денег !
             </div>
-            <button class="btn btn--small trigger"><?= $ml->tr('Submit application') ?></button>
+            <button class="btn btn--small trigger">оставить заявку</button>
           </div>
         </div>
       </div>
@@ -168,16 +168,16 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
     <section class="more">
       <div class="wrap">
         <h2 class="text--uppercased heading--smaller">
-          <span class="text--accented"><?= $ml->tr('We do more') ?>, </span><br /><?= $ml->tr('than what is required by our duties') ?>!
+          <span class="text--accented">Делаем больше, </span><br />чем требуют наши обязанности!
         </h2>
         <div class="text--smaller">
-          <?= $ml->tr('Fill out the form below and we will make an analysis and an approximate forecast based on the results') ?>
+          Заполните форму ниже и мы сделаем бесплатный аудит и приблизительный прогноз по результатам
         </div>
         <form action="#" class="form">
           <input
             type="text"
             name="name"
-            placeholder="<?= $ml->tr('Enter your name') ?>"
+            placeholder="Введите ваше имя"
             required
             class="form__control form__control--wide"
             autocomplete="off"
@@ -185,43 +185,43 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
           <input
             type="tel"
             name="phone"
-            placeholder="<?= $ml->tr('Enter your phone') ?>"
+            placeholder="Контактный телефон"
             required
             class="form__control form__control--wide"
             autocomplete="off"
           />
-          <button class="btn btn--wide" type="submit"><?= $ml->tr('Submit application') ?></button>
+          <button class="btn btn--wide" type="submit">Оставить заявку</button>
         </form>
       </div>
     </section>
 
     <section id="services" class="services">
       <h2 class="text--centered">
-        <?= $ml->tr('Our') ?> <span class="text--accented"><?= $ml->tr('services') ?></span>
+        Наши <span class="text--accented">услуги</span>
       </h2>
       <div class="wrap">
         <div class="services__item">
           <div class="img__wrap">
-            <img src="img/services-1.jpg" alt="<?= $ml->tr('Targeted') ?> <?= $ml->tr('advertisement') ?>" />
+            <img src="img/services-1.jpg" alt="" />
           </div>
           <div class="services__box">
-            <h3><span class="text--accented"><?= $ml->tr('Targeted') ?></span> <?= $ml->tr('advertisement') ?></h3>
+            <h3><span class="text--accented">Доверительное</span> управление вашей недвижимостью</h3>
             <p>
-              <?= $ml->tr('We do a full analysis of landing pages, connect analytics and AmoCRM to analyze advertisements and each enquiry. This allows you to focus not on the price of the lead, but on the final cost.') ?>
+              Полный спектр услуг по управлению недвижимостью, чтобы помочь своим клиентам во всех аспектах их инвестиций в недвижимость.
             </p>
-            <button class="btn trigger"><?= $ml->tr('Learn more') ?></button>
+            <button class="btn trigger">Узнать подробнее</button>
           </div>
         </div>
         <div class="services__item">
           <div class="img__wrap">
-            <img src="img/services-2.jpg" alt="<?= $ml->tr('Funnel') ?>" />
+            <img src="img/assistant.jpg" alt="" />
           </div>
           <div class="services__box">
-            <h3><span class="text--accented"><?= $ml->tr('Funnel') ?></span></h3>
+            <h3><span class="text--accented">Консьерж-сервис</span></h3>
             <p>
-              <?= $ml->tr('We develop automated marketing funnels with the connection of chat bots. This not only unloads the sales department, but also allows you to warm up each potential client, bringing him to a purchase. You paid money so that he went to the site and left a request, so you need to work with him and "squeeze".') ?>
+              Предлагаем вашему вниманию услуги консьержа на Северном Кипре. Наши представители станут вашими настоящими помощниками в любых ваших вопросов.
             </p>
-            <button class="btn trigger"><?= $ml->tr('Learn more') ?></button>
+            <button class="btn trigger">Узнать подробнее</button>
           </div>
         </div>
       </div>
@@ -230,74 +230,71 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
     <section id="offer" class="offer">
       <div class="wrap">
         <h2>
-          <?= $ml->tr('What we') ?> <span class="text--accented text--underlined"><?= $ml->tr('offer') ?></span>
+          Что мы <span class="text--accented text--underlined">предлагаем</span>
         </h2>
         <div class="offer__grid">
           <div class="offer__item line__bottom line__bottom--first">
-            <i class="fas fa-chart-line"></i>
+            <i class="fas fa-check-double"></i>
             <h3>
-              <span class="text--accented"><?= $ml->tr('Analisys') ?></span>
-              <?= $ml->tr('business and competitor') ?>
+              <span class="text--accented">Заявка</span>
             </h3>
             <p>
-              <?= $ml->tr('We give advice on improving the funnel / lead magnet and your business model in general') ?>
+              Вы оставляете заявку на нашем сайте или по телефону.
             </p>
             <div class="offer__number"><span>1</span></div>
           </div>
           <div class="offer__item line__bottom">
-            <i class="far fa-user-circle"></i>
+            <i class="fas fa-eye"></i>
             <h3>
-              <span class="text--accented"><?= $ml->tr('Mental') ?></span>
-              <?= $ml->tr('map') ?>
+              <span class="text--accented">Аудит</span> недвижимости
             </h3>
-            <p><?= $ml->tr('Visualizing of work plan') ?></p>
+            <p>Мы проводим аудит вашей недвижимости: оценка состояния, расчет доходности, рекомендации по повышению стоимости сдаваемого жилья.</p>
             <div class="offer__number"><span>2</span></div>
           </div>
           <div class="offer__item line__bottom line__bottom--last">
-            <i class="fas fa-sliders-h"></i>
+            <i class="fas fa-tasks"></i>
             <h3>
-              <span class="text--accented"><?= $ml->tr('Connecting metrics') ?></span>
-              <?= $ml->tr('to your website') ?>
+              <span class="text--accented">Дополнительные</span>
+              услуги
             </h3>
-            <p><?= $ml->tr('To provide complete analysis of targeted traffic behavior') ?></p>
+            <p>Вы выбираете дополнительные услуги (профессиональная фото/видеосъемка, декорирование, покупка бытовых принадлежностей, полная комплектация объекта под сдачу и др.)</p>
             <div class="offer__number"><span>3</span></div>
           </div>
           <div class="offer__item line__bottom">
-            <i class="fab fa-instagram"></i>
-            <h3><span class="text--accented"><?= $ml->tr('Scaling') ?></span></h3>
-            <p><?= $ml->tr('Developing of new traffic sources') ?></p>
+            <i class="fas fa-rocket"></i>
+            <h3><span class="text--accented">Запуск</span> рекламы</h3>
+            <p>Мы запускаем рекламу и обеспечиваем комплексное маркетинговое сопровождение вашего объекта.</p>
             <div class="offer__number"><span>6</span></div>
           </div>
           <div class="offer__item line__bottom">
-            <i class="fas fa-layer-group"></i>
-            <h3><span class="text--accented"><?= $ml->tr('Re-marketing') ?></span></h3>
-            <p><?= $ml->tr('Convert generally interested clients into buying customers') ?></p>
+            <i class="fas fa-hammer"></i>
+            <h3><span class="text--accented">Начало</span> работы</h3>
+            <p>Мы приступаем к выполнению необходимых работ по договору.</p>
             <div class="offer__number"><span>5</span></div>
           </div>
           <div class="offer__item line__bottom line__bottom--last line__right">
-            <i class="fab fa-sketch"></i>
+            <i class="fas fa-file-contract"></i>
             <h3>
-              <span class="text--accented"><?= $ml->tr('Development of') ?></span>
-              <?= $ml->tr('designs') ?>
+              <span class="text--accented">Подписание</span> договора
             </h3>
-            <p><?= $ml->tr('Unique images and videos') ?></p>
+            <p>Мы подписываем договор доверительного управления, в котором юридически фиксируем нашу ответственность и обязательства перед собственником жилья.</p>
             <div class="offer__number"><span>4</span></div>
           </div>
           <div class="offer__item line__bottom line__left">
-            <i class="fas fa-check-double"></i>
+            <i class="fas fa-chalkboard-teacher"></i>
             <h3>
-              <span class="text--accented"><?= $ml->tr('Interim') ?></span>
-              <?= $ml->tr('analisys') ?>
+              <span class="text--accented">Обработка</span>
+              заявок
             </h3>
-            <p><?= $ml->tr('Identification of weaknesses and optimization of advertising campaign') ?></p>
+            <p>Мы отвечаем за прием и обработку заявок, сопровождение арендаторов с момента бронирования до выезда.</p>
             <div class="offer__number"><span>7</span></div>
           </div>
           <div class="offer__item line__bottom">
-            <i class="fas fa-cog"></i>
+            <i class="fas fa-money-bill-wave"></i>
             <h3>
-              <span class="text--accented"><?= $ml->tr('Setting up the') ?></span> <?= $ml->tr('test ad compaing') ?>
+              <span class="text--accented">Профит</span> :)
             </h3>
-            <p><?= $ml->tr('Audience segmentation and testing up creatives') ?></p>
+            <p>Вы получаете доход от сдачи жилья в аренду в соответствии с согласованными сроками по договору.</p>
             <div class="offer__number"><span>8</span></div>
           </div>
           <div
@@ -305,8 +302,8 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
           >
             <div class="bg">
               <h3>
-                <span class="text--accented"><?= $ml->tr('Get tons') ?></span><br />
-                <?= $ml->tr('of clients') ?>
+                Нас <span class="text--accented">рекомендуют</span><br />
+                друзьям
               </h3>
             </div>
             <div class="offer__number">
@@ -320,52 +317,44 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
     <section id="why-we" class="why-we">
       <div class="wrap">
         <h2 class="text--centered">
-          <span class="text--accented"><?= $ml->tr('Why us') ?></span>, <?= $ml->tr('and not someone else') ?>
+          <span class="text--accented">Почему мы</span>, а не кто-то другой
         </h2>
         <div class="why-we__grid">
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented"><?= $ml->tr('We create') ?></span> <?= $ml->tr('full marketing strategy') ?>
-            </p>
-            <p><?= $ml->tr('Tailored to your niche and business-model') ?></p>
-          </div>
-          <div class="why-we__item why-we__item--bordered">
-            <p>
-              <span class="text--accented"><?= $ml->tr('Complex') ?></span> <?= $ml->tr('marketing approach') ?>
-            </p>
-            <p>
-              <?= $ml->tr('In addition to advertisements we will set up a bunch of other useful tools for you') ?>
+              <span class="text--accented">Тщательный анализ</span> и выбор надежных арендаторов
             </p>
           </div>
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented"><?= $ml->tr('We strengthen a pixel') ?></span> <?= $ml->tr('of your website') ?>
+              <span class="text--accented">Контроль своевременного</span> погашения арендной платы и коммунальных платежей
             </p>
-            <p><?= $ml->tr('So that you get only quality customers') ?></p>
           </div>
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented"><?= $ml->tr('We are aiming') ?></span> <?= $ml->tr('on a quick payback') ?>
+              <span class="text--accented">Решение всех</span> необходимых вопросов с ремонтом, уборкой и обслуживанием, включая консьерж-сервис для арендаторов
             </p>
-            <p><?= $ml->tr('For your ROI and not just for leads and CTR') ?></p>
           </div>
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented"><?= $ml->tr('We develop flexible') ?></span> <?= $ml->tr('marketing strategy') ?>
+              <span class="text--accented">Регулярное предоставление</span> собственнику отчетов о проведенной работе
             </p>
-            <p><?= $ml->tr('With an effective advertising campaign') ?></p>
           </div>
           <div class="why-we__item why-we__item--bordered">
             <p>
-              <span class="text--accented"><?= $ml->tr('We create') ?></span> <?= $ml->tr('design creatives in your own corporate style') ?>
+              <span class="text--accented">Быстрое разрешение</span> конфликтных ситуаций и бытовых вопросов с арендаторами
             </p>
-            <p><?= $ml->tr('And yes, we make videos)') ?></p>
+          </div>
+          <div class="why-we__item why-we__item--bordered">
+            <p>
+              <span class="text--accented">Обеспечение полной </span> сохранности вашей собственности, включая страхование и юридическую защиту интересов
+            </p>
           </div>
           <div class="why-we__item why-we__item--bordered why-we__item--last">
             <p>
-              <span class="text--accented"><?= $ml->tr('Our team is available') ?></span> 24/7
+              <span class="text--accented">Наша команда на связи</span> 24/7
             </p>
-            <p><?= $ml->tr('And we\'re just good guys') ?></p>
+            <p>А еще мы просто хорошие ребята)</p>
           </div>
         </div>
       </div>
@@ -379,13 +368,13 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
           </p>
         </div>
         <div class="footer__item footer__nav">
-          <a href="#top"><?= $ml->tr('Main') ?></a>
-          <a href="#services"><?= $ml->tr('Our services') ?></a>
-          <a href="#offer"><?= $ml->tr('What we offer') ?></a>
-          <a href="#why-we"><?= $ml->tr('Why we') ?></a>
+          <a href="#top">Главная</a>
+          <a href="#services">Наши услуги</a>
+          <a href="#offer">Что мы предлагаем</a>
+          <a href="#why-we">Почему мы</a>
         </div>
         <div class="footer__item footer__social">
-          <p><?= $ml->tr('Look for us in social networks') ?></p>
+          <p>Ищите нас в соц сетях</p>
           <div class="footer__social__grid">
             <a
               href="https://www.instagram.com/targetolog_ustinov/"
@@ -418,15 +407,15 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
         </div>
         <div class="footer__item footer__phone">
           <a href="tel:+905338365211" class="btn">+905338365211</a>
-          <p><?= $ml->tr('Call us, we are in touch') ?></p>
+          <p>Звоните, мы на связи</p>
         </div>
         <div class="footer__item footer__copyrights">
           <a
             href="https://www.myseahomes.com/privacy-policy.html"
             target="_blank"
-            ><?= $ml->tr('Privacy Policy') ?></a
+            >Политика конфиденциальности</a
           >
-          <p><?= $ml->tr('All rights reserved') ?> <br />© 2022</p>
+          <p>Все права защищены <br />© 2022</p>
         </div>
         <div class="footer__item footer__address">
           <p>
@@ -437,12 +426,12 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
       </div>
     </footer>
 
-    <div id="modal" data-izimodal-title="<?= $ml->tr('Leave a request') ?>" data-izimodal-subtitle="<?= $ml->tr('We will call you back in the next 15 minutes') ?>">
+    <div id="modal" data-izimodal-title="Оставьте заявку" data-izimodal-subtitle="Мы перезвоним вам в ближайшие 15 минут">
       <form action="#" class="form">
         <input
           type="text"
           name="name"
-          placeholder="<?= $ml->tr('Enter your name') ?>"
+          placeholder="Введите ваше имя"
           required
           class="form__control form__control--wide"
           autocomplete="off"
@@ -450,16 +439,16 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
         <input
           type="tel"
           name="phone"
-          placeholder="<?= $ml->tr('Enter your phone') ?>"
+          placeholder="Контактный телефон"
           required
           class="form__control form__control--wide"
           autocomplete="off"
         />
-        <button class="btn btn--wide" type="submit"><?= $ml->tr('Submit application') ?></button>
+        <button class="btn btn--wide" type="submit">Оставить заявку</button>
       </form>
     </div>
 
-    <div id="thank-you" data-izimodal-title="<?= $ml->tr('Thanks') ?>!" data-izimodal-subtitle="<?= $ml->tr('Expect a call within 15 minutes') ?>"></div>
+    <div id="thank-you" data-izimodal-title="Спасибо!" data-izimodal-subtitle="Ожидайте звонка в течении 15 минут"></div>
 
     <script
       defer
