@@ -82,11 +82,12 @@ section,
   &__subtitle {
     font-size: 1.8rem;
     font-weight: 300;
-    color: map_get($brand-colors, darker);
+    color: $white;
   }
 
   &__desc {
     margin: 6rem 0 7rem;
+    font-size: 2.4rem;
   }
 }
 
@@ -120,7 +121,7 @@ section,
 
     &__title {
       & > span {
-        color: map_get($brand-colors, darker);
+        color: map_get($brand-colors, accent);
         font-size: 1.4rem;
         font-weight: 300;
         text-transform: lowercase;
@@ -133,7 +134,8 @@ section,
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 1rem;
     }
   }
 }

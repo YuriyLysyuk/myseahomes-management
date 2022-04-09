@@ -320,7 +320,7 @@ if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
     <section id="why-we" class="why-we">
       <div class="wrap">
         <h2 class="text--centered">
-          <span class="text--accented"><?= $ml->tr('Why us') ?></span> <?= $ml->tr('and not someone else') ?>
+          <span class="text--accented"><?= $ml->tr('Why us') ?></span>, <?= $ml->tr('and not someone else') ?>
         </h2>
         <div class="why-we__grid">
           <div class="why-we__item why-we__item--bordered">
