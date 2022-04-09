@@ -74,7 +74,7 @@ gulp.task('deploy', function () {
     rsync({
       root: 'app/',
       hostname: 'myseahf2@myseahf2.beget.tech',
-      destination: 'myseahomes.com/public_html/boost/',
+      destination: 'myseahomes.com/public_html/management/',
       include: ['*.htaccess'], // Includes files to deploy
       exclude: ['**/Thumbs.db', '**/*.DS_Store'], // Excludes files from deploy
       recursive: true,

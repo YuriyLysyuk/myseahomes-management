@@ -5,7 +5,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 $project_name = 'Маркетинг | Myseahomes';
 $admin_email  = 'myseahomes@yandex.com';
 $from_email = 'info@myseahomes.com';
-$form_subject = 'Новая заявка c myseahomes.com/boost/';
+$form_subject = 'Новая заявка c myseahomes.com/management/';
 
 //Script Foreach
 $c = true;
