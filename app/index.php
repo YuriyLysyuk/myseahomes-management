@@ -1,13 +1,13 @@
 <?php
 
 require 'phpLibs/php-multilang/MultiLang.php';
-$ml = new MultiLang();
-$lang = 'ru';
+$ml = new MultiLang('EN');
+$lang = 'en';
 
-// if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
-//   || (isset($_COOKIE) && isset($_COOKIE['rl_lang_front']) && $_COOKIE['rl_lang_front'] === 'ru')) {
-//   $ml->setLanguage('RU');
-// };
+if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
+  || (isset($_COOKIE) && isset($_COOKIE['rl_lang_front']) && $_COOKIE['rl_lang_front'] === 'ru')) {
+  $ml->setLanguage('RU');
+};
 
 ?>
 
@@ -144,7 +144,7 @@ $lang = 'ru';
         <div class="differents__item differents__item--bordered">
           <div class="differents__item__title text--uppercased">
             <span><?= $ml->tr('и на конец, главное...') ?></span><br />
-            <?= $ml->tr('>мы делаем много денег!') ?>
+            <?= $ml->tr('мы делаем много денег!') ?>
           </div>
           <button class="btn btn--small trigger"><?= $ml->tr('оставить заявку') ?></button>
         </div>
