@@ -7,6 +7,7 @@ $lang = 'en';
 if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
   || (isset($_COOKIE) && isset($_COOKIE['rl_lang_front']) && $_COOKIE['rl_lang_front'] === 'ru')) {
   $ml->setLanguage('RU');
+  $lang = 'ru';
 };
 
 ?>
