@@ -1,6 +1,9 @@
 'use strict';
 
 $(document).ready(function () {
+  // Lazy Loading
+  // $('.lazy').Lazy();
+
   // Modal
   let modalForm = $('#modal').iziModal({
     background: '#1c222a',

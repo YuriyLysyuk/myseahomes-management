@@ -1,6 +1,6 @@
-<?php  
+<?php
 
-require 'phpLibs/php-multilang/MultiLang.php'; 
+require 'phpLibs/php-multilang/MultiLang.php';
 $ml = new MultiLang();
 
 // if (((isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'ru'))
@@ -12,452 +12,521 @@ $ml = new MultiLang();
 
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8" />
 
-    <title>Отдел менеджмента Myseahomes</title>
-    <meta
-      name="description"
-      content="Превратите свою квартиру в номер прибыльного апарт-отеля"
-    />
+<head>
+  <meta charset="utf-8" />
 
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, maximum-scale=1"
-    />
+  <title>Отдел менеджмента Myseahomes</title>
+  <meta name="description" content="Превратите свою квартиру в номер прибыльного апарт-отеля" />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-    <link rel="manifest" href="site.webmanifest" />
-    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#1c222a" />
-    <link rel="shortcut icon" href="favicon.ico" />
-    <meta name="msapplication-TileColor" content="#1c222a" />
-    <meta name="msapplication-config" content="browserconfig.xml" />
-    <meta name="theme-color" content="#1c222a" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
-    <link rel="stylesheet" href="css/fonts.min.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css"
-    />
-    <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+  <link rel="manifest" href="site.webmanifest" />
+  <link rel="mask-icon" href="safari-pinned-tab.svg" color="#1c222a" />
+  <link rel="shortcut icon" href="favicon.ico" />
+  <meta name="msapplication-TileColor" content="#1c222a" />
+  <meta name="msapplication-config" content="browserconfig.xml" />
+  <meta name="theme-color" content="#1c222a" />
 
-    <!-- Yandex.Metrika counter -->
-    <script type="text/javascript">
-      (function (m, e, t, r, i, k, a) {
-        m[i] =
-          m[i] ||
-          function () {
-            (m[i].a = m[i].a || []).push(arguments);
-          };
-        m[i].l = 1 * new Date();
-        (k = e.createElement(t)),
-          (a = e.getElementsByTagName(t)[0]),
-          (k.async = 1),
-          (k.src = r),
-          a.parentNode.insertBefore(k, a);
-      })(
-        window,
-        document,
-        'script',
-        'https://mc.yandex.ru/metrika/tag.js',
-        'ym'
-      );
+  <link rel="stylesheet" href="css/fonts.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
+  <link rel="stylesheet" href="css/main.min.css" />
 
-      ym(72242728, 'init', {
-        clickmap: true,
-        trackLinks: true,
-        accurateTrackBounce: true,
-        webvisor: true,
-      });
-    </script>
-    <noscript
-      ><div>
-        <img
-          src="https://mc.yandex.ru/watch/72242728"
-          style="position: absolute; left: -9999px"
-          alt=""
-        /></div
-    ></noscript>
-    <!-- /Yandex.Metrika counter -->
-  </head>
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function(m, e, t, r, i, k, a) {
+      m[i] =
+        m[i] ||
+        function() {
+          (m[i].a = m[i].a || []).push(arguments);
+        };
+      m[i].l = 1 * new Date();
+      (k = e.createElement(t)),
+      (a = e.getElementsByTagName(t)[0]),
+      (k.async = 1),
+      (k.src = r),
+      a.parentNode.insertBefore(k, a);
+    })(
+      window,
+      document,
+      'script',
+      'https://mc.yandex.ru/metrika/tag.js',
+      'ym'
+    );
 
-  <body>
-    <header id="top" class="header">
-      <div class="wrap">
-        <a href="/"><img class="logo" src="img/logo.png" alt="Myseahomes logo" /></a>
-      </div>
-    </header>
+    ym(72242728, 'init', {
+      clickmap: true,
+      trackLinks: true,
+      accurateTrackBounce: true,
+      webvisor: true,
+    });
+  </script>
+  <noscript>
+    <div>
+      <img src="https://mc.yandex.ru/watch/72242728" style="position: absolute; left: -9999px" alt="" />
+    </div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+</head>
 
-    <section class="hero">
-      <div class="wrap">
-        <h1>
-          <span class="hero__subtitle">Отдел менеджмента</span><br />
-          <span class="text--accented">My</span>seahomes
-        </h1>
-        <p class="hero__desc">
-          <span class="text--accented">/</span> Превратите свою квартиру на Кипре в номер <br> 
-          <span
-            class="text--accented text--uppercased text--underlined text--bolded"
-            >прибыльного апарт-отеля</span
-          >
-        </p>
-        <button class="btn trigger">Оставить заявку</button>
-      </div>
-    </section>
+<body>
+  <header id="top" class="header">
+    <div class="wrap">
+      <a href="/"><img class="logo" src="img/logo.png" alt="Myseahomes logo" /></a>
+    </div>
+  </header>
 
-    <section class="differents">
-      <div class="wrap">
-        <h2 class="uppercased">
+  <section class="hero">
+    <div class="wrap">
+      <h1>
+        <span class="hero__subtitle">Отдел менеджмента</span><br />
+        <span class="text--accented">My</span>seahomes
+      </h1>
+      <p class="hero__desc">
+        <span class="text--accented">/</span> Превратите свою квартиру на Кипре в номер <br>
+        <span class="text--accented text--uppercased text--underlined text--bolded">прибыльного апарт-отеля</span>
+      </p>
+      <button class="btn trigger">Оставить заявку</button>
+      <img class="visible-mob" src="./img/hotel.jpg" alt="отель">
+    </div>
+  </section>
+
+  <section class="differents">
+    <div class="wrap">
+      <h2 class="uppercased">
         Чем мы <br /><span class="text--accented">отличаемся</span> от конкурентов?
-        </h2>
-        <div class="differents__grid">
-          <div class="differents__item">
-            <div class="differents__item__number">
-              0<span class="text--accented">1</span>
-            </div>
-            <div class="differents__item__desc">
-              Обеспечиваем постоянную заполняемость за счет профессиональной рекламы.
-            </div>
-          </div>
-          <div class="differents__item">
-            <div class="differents__item__number">
-              0<span class="text--accented">2</span>
-            </div>
-            <div class="differents__item__desc">
-              Защищаем ваши интересы за счет регулярного контроля оплат, проверки состояния квартиры и юридического сопровождения.
-            </div>
-          </div>
-          <div class="differents__item">
-            <div class="differents__item__number">
-              0<span class="text--accented">3</span>
-            </div>
-            <div class="differents__item__desc">
-              Увеличиваем доходность с помощью консьерж-сервиса и широкого спектра допуслуг.
-            </div>
-          </div>
-          <div class="differents__item">
-            <div class="differents__item__number">
-              0<span class="text--accented">4</span>
-            </div>
-            <div class="differents__item__desc">
-              Мы работаем в сфере доверительного управления с 2015 года и знаем как быстро сдать апартаменты, виллу или бунгало на прозрачных и выгодных условиях для собственника.
-            </div>
-          </div>
-          <div class="differents__item">
-            <div class="differents__item__number">
-              0<span class="text--accented">5</span>
-            </div>
-            <div class="differents__item__desc">
-              Ваша квартира сохранится в отличном состоянии. Вы будете получать своевременную и полную отчетность по заселениям. Вы всегда сможете приехать в отпуск в готовую для проживания квартиру.
-            </div>
-          </div>
-          <div class="differents__item differents__item--bordered">
-            <div class="differents__item__title text--uppercased">
-              <span>и на конец, главное...</span><br />
-              мы делаем много денег !
-            </div>
-            <button class="btn btn--small trigger">оставить заявку</button>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="more">
-      <div class="wrap">
-        <h2 class="text--uppercased heading--smaller">
-          <span class="text--accented">Делаем больше, </span><br />чем требуют наши обязанности!
-        </h2>
-        <div class="text--smaller">
-          Заполните форму ниже и мы сделаем бесплатный аудит и приблизительный прогноз по результатам
-        </div>
-        <form action="#" class="form">
-          <input
-            type="text"
-            name="name"
-            placeholder="Введите ваше имя"
-            required
-            class="form__control form__control--wide"
-            autocomplete="off"
-          />
-          <input
-            type="tel"
-            name="phone"
-            placeholder="Контактный телефон"
-            required
-            class="form__control form__control--wide"
-            autocomplete="off"
-          />
-          <button class="btn btn--wide" type="submit">Оставить заявку</button>
-        </form>
-      </div>
-    </section>
-
-    <section id="services" class="services">
-      <h2 class="text--centered">
-        Наши <span class="text--accented">услуги</span>
       </h2>
-      <div class="wrap">
-        <div class="services__item">
-          <div class="img__wrap">
-            <img src="img/services-1.jpg" alt="" />
+      <div class="differents__grid">
+        <div class="differents__item">
+          <div class="differents__item__number">
+            0<span class="text--accented">1</span>
           </div>
-          <div class="services__box">
-            <h3><span class="text--accented">Доверительное</span> управление вашей недвижимостью</h3>
-            <p>
-              Полный спектр услуг по управлению недвижимостью, чтобы помочь своим клиентам во всех аспектах их инвестиций в недвижимость.
-            </p>
-            <button class="btn trigger">Узнать подробнее</button>
+          <div class="differents__item__desc">
+            Обеспечиваем постоянную заполняемость за счет профессиональной рекламы.
           </div>
         </div>
-        <div class="services__item">
-          <div class="img__wrap">
-            <img src="img/assistant.jpg" alt="" />
+        <div class="differents__item">
+          <div class="differents__item__number">
+            0<span class="text--accented">2</span>
           </div>
-          <div class="services__box">
-            <h3><span class="text--accented">Консьерж-сервис</span></h3>
-            <p>
-              Предлагаем вашему вниманию услуги консьержа на Северном Кипре. Наши представители станут вашими настоящими помощниками в любых ваших вопросов.
-            </p>
-            <button class="btn trigger">Узнать подробнее</button>
+          <div class="differents__item__desc">
+            Защищаем ваши интересы за счет регулярного контроля оплат, проверки состояния квартиры и юридического сопровождения.
           </div>
         </div>
-      </div>
-    </section>
-
-    <section id="offer" class="offer">
-      <div class="wrap">
-        <h2>
-          Что мы <span class="text--accented text--underlined">предлагаем</span>
-        </h2>
-        <div class="offer__grid">
-          <div class="offer__item line__bottom line__bottom--first">
-            <i class="fas fa-check-double"></i>
-            <h3>
-              <span class="text--accented">Заявка</span>
-            </h3>
-            <p>
-              Вы оставляете заявку на нашем сайте или по телефону.
-            </p>
-            <div class="offer__number"><span>1</span></div>
+        <div class="differents__item">
+          <div class="differents__item__number">
+            0<span class="text--accented">3</span>
           </div>
-          <div class="offer__item line__bottom">
-            <i class="fas fa-eye"></i>
-            <h3>
-              <span class="text--accented">Аудит</span> недвижимости
-            </h3>
-            <p>Мы проводим аудит вашей недвижимости: оценка состояния, расчет доходности, рекомендации по повышению стоимости сдаваемого жилья.</p>
-            <div class="offer__number"><span>2</span></div>
+          <div class="differents__item__desc">
+            Увеличиваем доходность с помощью консьерж-сервиса и широкого спектра допуслуг.
           </div>
-          <div class="offer__item line__bottom line__bottom--last">
-            <i class="fas fa-tasks"></i>
-            <h3>
-              <span class="text--accented">Дополнительные</span>
-              услуги
-            </h3>
-            <p>Вы выбираете дополнительные услуги (профессиональная фото/видеосъемка, декорирование, покупка бытовых принадлежностей, полная комплектация объекта под сдачу и др.)</p>
-            <div class="offer__number"><span>3</span></div>
+        </div>
+        <div class="differents__item">
+          <div class="differents__item__number">
+            0<span class="text--accented">4</span>
           </div>
-          <div class="offer__item line__bottom">
-            <i class="fas fa-rocket"></i>
-            <h3><span class="text--accented">Запуск</span> рекламы</h3>
-            <p>Мы запускаем рекламу и обеспечиваем комплексное маркетинговое сопровождение вашего объекта.</p>
-            <div class="offer__number"><span>6</span></div>
+          <div class="differents__item__desc">
+            Мы работаем в сфере доверительного управления с 2015 года и знаем как быстро сдать апартаменты, виллу или бунгало на прозрачных и выгодных условиях для собственника.
           </div>
-          <div class="offer__item line__bottom">
-            <i class="fas fa-hammer"></i>
-            <h3><span class="text--accented">Начало</span> работы</h3>
-            <p>Мы приступаем к выполнению необходимых работ по договору.</p>
-            <div class="offer__number"><span>5</span></div>
+        </div>
+        <div class="differents__item">
+          <div class="differents__item__number">
+            0<span class="text--accented">5</span>
           </div>
-          <div class="offer__item line__bottom line__bottom--last line__right">
-            <i class="fas fa-file-contract"></i>
-            <h3>
-              <span class="text--accented">Подписание</span> договора
-            </h3>
-            <p>Мы подписываем договор доверительного управления, в котором юридически фиксируем нашу ответственность и обязательства перед собственником жилья.</p>
-            <div class="offer__number"><span>4</span></div>
+          <div class="differents__item__desc">
+            Ваша квартира сохранится в отличном состоянии. Вы будете получать своевременную и полную отчетность по заселениям. Вы всегда сможете приехать в отпуск в готовую для проживания квартиру.
           </div>
-          <div class="offer__item line__bottom line__left">
-            <i class="fas fa-chalkboard-teacher"></i>
-            <h3>
-              <span class="text--accented">Обработка</span>
-              заявок
-            </h3>
-            <p>Мы отвечаем за прием и обработку заявок, сопровождение арендаторов с момента бронирования до выезда.</p>
-            <div class="offer__number"><span>7</span></div>
+        </div>
+        <div class="differents__item differents__item--bordered">
+          <div class="differents__item__title text--uppercased">
+            <span>и на конец, главное...</span><br />
+            мы делаем много денег !
           </div>
-          <div class="offer__item line__bottom">
-            <i class="fas fa-money-bill-wave"></i>
-            <h3>
-              <span class="text--accented">Профит</span> :)
-            </h3>
-            <p>Вы получаете доход от сдачи жилья в аренду в соответствии с согласованными сроками по договору.</p>
-            <div class="offer__number"><span>8</span></div>
-          </div>
-          <div
-            class="offer__item offer__item--bg line__bottom line__bottom--last"
-          >
-            <div class="bg">
-              <h3>
-                Нас <span class="text--accented">рекомендуют</span><br />
-                друзьям
-              </h3>
-            </div>
-            <div class="offer__number">
-              <span><i class="fas fa-check"></i></span>
-            </div>
-          </div>
+          <button class="btn btn--small trigger">оставить заявку</button>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="why-we" class="why-we">
-      <div class="wrap">
-        <h2 class="text--centered">
-          <span class="text--accented">Почему мы</span>, а не кто-то другой
-        </h2>
-        <div class="why-we__grid">
-          <div class="why-we__item why-we__item--bordered">
-            <p>
-              <span class="text--accented">Тщательный анализ</span> и выбор надежных арендаторов
-            </p>
-          </div>
-          <div class="why-we__item why-we__item--bordered">
-            <p>
-              <span class="text--accented">Контроль своевременного</span> погашения арендной платы и коммунальных платежей
-            </p>
-          </div>
-          <div class="why-we__item why-we__item--bordered">
-            <p>
-              <span class="text--accented">Решение всех</span> необходимых вопросов с ремонтом, уборкой и обслуживанием, включая консьерж-сервис для арендаторов
-            </p>
-          </div>
-          <div class="why-we__item why-we__item--bordered">
-            <p>
-              <span class="text--accented">Регулярное предоставление</span> собственнику отчетов о проведенной работе
-            </p>
-          </div>
-          <div class="why-we__item why-we__item--bordered">
-            <p>
-              <span class="text--accented">Быстрое разрешение</span> конфликтных ситуаций и бытовых вопросов с арендаторами
-            </p>
-          </div>
-          <div class="why-we__item why-we__item--bordered">
-            <p>
-              <span class="text--accented">Обеспечение полной </span> сохранности вашей собственности, включая страхование и юридическую защиту интересов
-            </p>
-          </div>
-          <div class="why-we__item why-we__item--bordered why-we__item--last">
-            <p>
-              <span class="text--accented">Наша команда на связи</span> 24/7
-            </p>
-            <p>А еще мы просто хорошие ребята)</p>
-          </div>
-        </div>
+  <section class="more">
+    <div class="wrap">
+      <h2 class="text--uppercased heading--smaller">
+        <span class="text--accented">Делаем больше, </span><br />чем требуют наши обязанности!
+      </h2>
+      <div class="text--smaller">
+        Заполните форму ниже и мы сделаем бесплатный аудит и приблизительный прогноз по результатам
       </div>
-    </section>
-
-    <footer class="footer">
-      <div class="footer__grid">
-        <div class="footer__item footer__title">
-          <p class="text--uppercased">
-            <span class="text--accented">My</span>seahomes
-          </p>
-        </div>
-        <div class="footer__item footer__nav">
-          <a href="#top">Главная</a>
-          <a href="#services">Наши услуги</a>
-          <a href="#offer">Что мы предлагаем</a>
-          <a href="#why-we">Почему мы</a>
-        </div>
-        <div class="footer__item footer__social">
-          <p>Ищите нас в соц сетях</p>
-          <div class="footer__social__grid">
-            <a
-              href="https://www.instagram.com/targetolog_ustinov/"
-              target="_blank"
-              class="instagram"
-              ><i class="fab fa-instagram"></i
-            ></a>
-            <a
-              href="https://www.facebook.com/Myseahomes"
-              target="_blank"
-              class="facebook"
-              ><i class="fab fa-facebook-f"></i
-            ></a>
-            <a
-              href="https://t.me/targetolog_ustinov"
-              target="_blank"
-              class="telegram"
-              ><i class="fab fa-telegram-plane"></i
-            ></a>
-            <!--<a href="#" target="_blank" class="viber"
-              ><i class="fab fa-viber"></i
-            ></a>-->
-            <a
-              href="https://wa.me/905338365211"
-              target="_blank"
-              class="whatsapp"
-              ><i class="fab fa-whatsapp"></i
-            ></a>
-          </div>
-        </div>
-        <div class="footer__item footer__phone">
-          <a href="tel:+905338365211" class="btn">+905338365211</a>
-          <p>Звоните, мы на связи</p>
-        </div>
-        <div class="footer__item footer__copyrights">
-          <a
-            href="https://www.myseahomes.com/privacy-policy.html"
-            target="_blank"
-            >Политика конфиденциальности</a
-          >
-          <p>Все права защищены <br />© 2022</p>
-        </div>
-        <div class="footer__item footer__address">
-          <p>
-            <i class="fas fa-map-marker-alt"></i> Catalkoy, Ayaztepe Sokak,
-            Riverside Sitesi
-          </p>
-        </div>
-      </div>
-    </footer>
-
-    <div id="modal" data-izimodal-title="Оставьте заявку" data-izimodal-subtitle="Мы перезвоним вам в ближайшие 15 минут">
       <form action="#" class="form">
-        <input
-          type="text"
-          name="name"
-          placeholder="Введите ваше имя"
-          required
-          class="form__control form__control--wide"
-          autocomplete="off"
-        />
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Контактный телефон"
-          required
-          class="form__control form__control--wide"
-          autocomplete="off"
-        />
+        <input type="text" name="name" placeholder="Введите ваше имя" required class="form__control form__control--wide" autocomplete="off" />
+        <input type="tel" name="phone" placeholder="Контактный телефон" required class="form__control form__control--wide" autocomplete="off" />
         <button class="btn btn--wide" type="submit">Оставить заявку</button>
       </form>
     </div>
+  </section>
 
-    <div id="thank-you" data-izimodal-title="Спасибо!" data-izimodal-subtitle="Ожидайте звонка в течении 15 минут"></div>
+  <section id="services" class="services">
+    <h2 class="text--centered">
+      Наши <span class="text--accented">услуги</span>
+    </h2>
+    <div class="wrap">
+      <div class="services__item">
+        <div class="img__wrap">
+          <img src="img/services-1.jpg" alt="" />
+        </div>
+        <div class="services__box">
+          <h3><span class="text--accented">Доверительное</span> управление вашей недвижимостью</h3>
+          <p>
+            Полный спектр услуг по управлению недвижимостью, чтобы помочь своим клиентам во всех аспектах их инвестиций в недвижимость.
+          </p>
+          <button class="btn trigger">Узнать подробнее</button>
+        </div>
+      </div>
+      <div class="services__item">
+        <div class="img__wrap">
+          <img src="img/assistant.jpg" alt="" />
+        </div>
+        <div class="services__box">
+          <h3><span class="text--accented">Консьерж-сервис</span></h3>
+          <p>
+            Предлагаем вашему вниманию услуги консьержа на Северном Кипре. Наши представители станут вашими настоящими помощниками в любых ваших вопросов.
+          </p>
+          <button class="btn trigger">Узнать подробнее</button>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <script
-      defer
-      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
-      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
-      crossorigin="anonymous"
-    ></script>
-    <script src="js/libs.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
-    <script src="js/common.js"></script>
-  </body>
+  <section id="offer" class="offer">
+    <div class="wrap">
+      <h2>
+        Что мы <span class="text--accented text--underlined">предлагаем</span>
+      </h2>
+      <div class="offer__grid">
+        <div class="offer__item line__bottom line__bottom--first">
+          <i class="fas fa-check-double"></i>
+          <h3>
+            <span class="text--accented">Заявка</span>
+          </h3>
+          <p>
+            Вы оставляете заявку на нашем сайте или по телефону.
+          </p>
+          <div class="offer__number"><span>1</span></div>
+        </div>
+        <div class="offer__item line__bottom">
+          <i class="fas fa-eye"></i>
+          <h3>
+            <span class="text--accented">Аудит</span> недвижимости
+          </h3>
+          <p>Мы проводим аудит вашей недвижимости: оценка состояния, расчет доходности, рекомендации по повышению стоимости сдаваемого жилья.</p>
+          <div class="offer__number"><span>2</span></div>
+        </div>
+        <div class="offer__item line__bottom line__bottom--last">
+          <i class="fas fa-tasks"></i>
+          <h3>
+            <span class="text--accented">Дополнительные</span>
+            услуги
+          </h3>
+          <p>Вы выбираете дополнительные услуги (профессиональная фото/видеосъемка, декорирование, покупка бытовых принадлежностей, полная комплектация объекта под сдачу и др.)</p>
+          <div class="offer__number"><span>3</span></div>
+        </div>
+        <div class="offer__item line__bottom">
+          <i class="fas fa-rocket"></i>
+          <h3><span class="text--accented">Запуск</span> рекламы</h3>
+          <p>Мы запускаем рекламу и обеспечиваем комплексное маркетинговое сопровождение вашего объекта.</p>
+          <div class="offer__number"><span>6</span></div>
+        </div>
+        <div class="offer__item line__bottom">
+          <i class="fas fa-hammer"></i>
+          <h3><span class="text--accented">Начало</span> работы</h3>
+          <p>Мы приступаем к выполнению необходимых работ по договору.</p>
+          <div class="offer__number"><span>5</span></div>
+        </div>
+        <div class="offer__item line__bottom line__bottom--last line__right">
+          <i class="fas fa-file-contract"></i>
+          <h3>
+            <span class="text--accented">Подписание</span> договора
+          </h3>
+          <p>Мы подписываем договор доверительного управления, в котором юридически фиксируем нашу ответственность и обязательства перед собственником жилья.</p>
+          <div class="offer__number"><span>4</span></div>
+        </div>
+        <div class="offer__item line__bottom line__left">
+          <i class="fas fa-chalkboard-teacher"></i>
+          <h3>
+            <span class="text--accented">Обработка</span>
+            заявок
+          </h3>
+          <p>Мы отвечаем за прием и обработку заявок, сопровождение арендаторов с момента бронирования до выезда.</p>
+          <div class="offer__number"><span>7</span></div>
+        </div>
+        <div class="offer__item line__bottom">
+          <i class="fas fa-money-bill-wave"></i>
+          <h3>
+            <span class="text--accented">Профит</span> :)
+          </h3>
+          <p>Вы получаете доход от сдачи жилья в аренду в соответствии с согласованными сроками по договору.</p>
+          <div class="offer__number"><span>8</span></div>
+        </div>
+        <div class="offer__item offer__item--bg line__bottom line__bottom--last">
+          <div class="bg">
+            <h3>
+              Нас
+              <br />
+              <span class="text--accented">рекомендуют</span>
+              <br />
+              друзьям
+            </h3>
+          </div>
+          <div class="offer__number">
+            <span><i class="fas fa-check"></i></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why-we" class="why-we">
+    <div class="wrap">
+      <h2 class="text--centered">
+        <span class="text--accented">Почему мы</span>, а не кто-то другой
+      </h2>
+      <div class="why-we__grid">
+        <div class="why-we__item why-we__item--bordered">
+          <p>
+            <span class="text--accented">Тщательный анализ</span> и выбор надежных арендаторов
+          </p>
+        </div>
+        <div class="why-we__item why-we__item--bordered">
+          <p>
+            <span class="text--accented">Контроль своевременного</span> погашения арендной платы и коммунальных платежей
+          </p>
+        </div>
+        <div class="why-we__item why-we__item--bordered">
+          <p>
+            <span class="text--accented">Решение всех</span> необходимых вопросов с ремонтом, уборкой и обслуживанием, включая консьерж-сервис для арендаторов
+          </p>
+        </div>
+        <div class="why-we__item why-we__item--bordered">
+          <p>
+            <span class="text--accented">Регулярное предоставление</span> собственнику отчетов о проведенной работе
+          </p>
+        </div>
+        <div class="why-we__item why-we__item--bordered">
+          <p>
+            <span class="text--accented">Быстрое разрешение</span> конфликтных ситуаций и бытовых вопросов с арендаторами
+          </p>
+        </div>
+        <div class="why-we__item why-we__item--bordered">
+          <p>
+            <span class="text--accented">Обеспечение полной </span> сохранности вашей собственности, включая страхование и юридическую защиту интересов
+          </p>
+        </div>
+        <div class="why-we__item why-we__item--bordered why-we__item--last">
+          <p>
+            <span class="text--accented">Наша команда на связи</span> 24/7
+          </p>
+          <p>А еще мы просто хорошие ребята)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <h2 class="text--centered">
+        <span class="text--accented">Отзывы</span>
+      </h2>
+      <div class="reviews__grid">
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-1.jpg" alt="Отзыв Анатолий">
+          <p>
+            Обратился впервые к Александру (MySeaHomes) пару лет назад, он сдал квартиру в этот же день, а через 2 дня получил первые деньги за аренду. Класс! Рекомендую!
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Анатолий</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-2.jpg" alt="Отзыв Анна Варнавская">
+          <p>
+            Всем привет! Работала с Александром Myseahomes, несколько раз, очень понравилось! Все четко, в обговоренные сроки. Хочу порекомендовать его, как надежного партнера!
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Анна Варнавская</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-3.jpg" alt="Отзыв Валентин Пранчук">
+          <p>
+            Уже давно работаем с Александром, зарекомендовал себя - как порядочный, честный партнер. Ему можно доверить не только недвижимость для работы, но и поручить решение многих задач. Всегда отличная отчетность, все во время. Очень приятно работать и общаться. Однозначно рекомендую.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Валентин Пранчук</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-4.jpg" alt="Отзыв Варвара Пенькова">
+          <p>
+            Несколько раз пользовалась сервисом и осталась очень довольна, квартиру сдали быстро и получили уже первые деньги спустя 3 дня. Пользуйтесь их услугами смело!
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Варвара Пенькова</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-5.jpg" alt="Отзыв Vasiliy Didukh">
+          <p>
+            Александра знаю давно, с тех времен, когда он только начинал свою деятельность в этом направлении на Северном Кипре. Сам много раз работал с ним в этом направлении. Всем, кто меня знает и не знает, могу рекомендовать пользоваться его услугами. Сервис супер! Деньги всегда получаю вовремя.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Vasiliy Didukh</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-6.jpg" alt="Отзыв Елена Хасанова">
+          <p>
+            Работала с Александром MySeaHomes неоднократно и продолжаю работать. Меня все устраивает. Заранее согласовывает каждый шаг, арендаторов тщательно подбирает. За недвижимостью полный контроль. Ни о чем даже волноваться не нужно. Выплаты всегда вовремя. Или по запросу без проблем.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Елена Хасанова</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-8.jpg" alt="Отзыв Елена Быкова">
+          <p>
+            Познакомились случайно. Но случайностей, как оказалось, не бывает) Работаем уже давненько. Нас все устраивает. Рекомендуем всем, кто постоянно на острове не проживает. Пускай ваша квартира работает и приносит прибыль)
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Елена Быкова</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-9.jpg" alt="Отзыв Елена Седякина">
+          <p>
+            Много раз пользовалась услугами этого сервиса в лице Александра, мне очень нравится. Можно доверить ему свою недвижимость под сдачу в аренду. Обычно зимой он сдает помесячно, летом конечно посуточно. Чтобы у владельцев был хороший профит.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Елена Седякина</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-10.jpg" alt="Отзыв Игорь Коршунов">
+          <p>
+            Рекомендую! Надежный, проверенный временем и сотрудничеством.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Игорь Коршунов</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-11.jpg" alt="Отзыв Ильяс Ибрагимов">
+          <p>
+            Давно с ним сотрудничаю. Все отлично. Всегда выполняет свои обязательства. Кто ищет человека, кому можно доверить свою недвижимость для сдачи в аренду - обращайтесь сюда. Останетесь довольны)
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Ильяс Ибрагимов</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-12.jpg" alt="Отзыв Лена Степанова">
+          <p>
+            Давно уже знаю Сашу и работаем с ним. Берет в работу как квартиры, так и виллы. Клиенты всегда есть. Арендаторов отбирает особенно тщательно. Соблюдает все моменты, чтобы собственники жилья ни о чем не волновались. А арендаторы были довольны. Win - Win ))
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Лена Степанова</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-13.jpg" alt="Отзыв Леонид Дзюба">
+          <p>
+            Работаю с Александром давно уже без всякого договора. Достаточно устного. Остров маленький. Зарекомендовал себя профессионалом в своем деле. Обращайтесь не раздумывая. Я рекомендую его друзьям.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Леонид Дзюба</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-14.jpg" alt="Отзыв Марина Матвеева-Коджадал">
+          <p>
+            Давно знаю Александра и его историю становления на нашем острове. В настоящий момент он профессионал своего дела. Могу рекомендовать его всем желающим иметь пассивный доход от своей недвижимости, когда вы тут не живете.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Марина Матвеева-Коджадал</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-15.jpg" alt="Отзыв Наталья Дзюбенко">
+          <p>
+            Хочу поделиться с вами контактом этого человека. Я искала того, кому можно доверить свою недвижимость на нашем острове, чтобы получать доход от сдачи в аренду. Наслышана о стольких моментах и нюансах, что очень страшно доверить свое кому либо. Но вот нашла Александра. С первых слов поняла, что ему можно доверить. Начали работать, я все ждала подвох, а он так и не наступал. На сегодняшний момент, могу точно сказать, рекомендую всем, особенно друзьям. Очень приятно работать и общаться.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Наталья Дзюбенко</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-16.jpg" alt="Отзыв Нурида Абдылбаева">
+          <p>
+            Работаем давно с Александром. Все супер! Сервис отличный! Конечно с арендаторами работать не просто, все люди разные. Но Александр умеет все конфликтные ситуации всегда уладить. Рекомендую всем. Особенно районы Алагади, Есентепе, Бахчели, Татлысу.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Нурида Абдылбаева</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-17.jpg" alt="Отзыв Светлана Алешкевич">
+          <p>
+            Как коллегу знаю Александра давно, этот сервис у них налажен очень хорошо. Сами пользуемся его услугами. Всегда хороший профит и вовремя. Звоните, условия вам понравятся.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Светлана Алешкевич</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-18.jpg" alt="Отзыв Сергей Кропанев">
+          <p>
+            Несколько лет работаю с Александром (Myseahomes), проверен временем и делами. Все мы начинали когда-то с чего-то на острове. В данный момент это профессионал своего дела. Смело обращайтесь, останетесь довольны. Рекомендую владельцам недвижимости, кто хочет, чтобы его квартира работала, пока хозяев нет на острове.
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Сергей Кропанев</span>
+          </p>
+        </div>
+        <div class="reviews__item reviews__item--bordered">
+          <img src="./img/review-19.jpg" alt="Отзыв Вячеслав Желиховский">
+          <p>
+            Думаю меня многие знают и знают, что значит мое слово. Хочу порекомендовать этого человека - Александра друзьям, знакомым и просто всем. Сервис сдачи в аренду недвижимости налажен очень хорошо. Насколько я знаю, внутренних запросов у него больше, чем недвижимости в работе. Потому, что репутация говорит сама за себя. Даже Booking не нужен)
+            <span class="reviews__author text--accented"><i class="fas fa-user-shield"></i> Вячеслав Желиховский</span>
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__grid">
+      <div class="footer__item footer__title">
+        <p class="text--uppercased">
+          <span class="text--accented">My</span>seahomes
+        </p>
+      </div>
+      <div class="footer__item footer__nav">
+        <a href="#top">Главная</a>
+        <a href="#services">Наши услуги</a>
+        <a href="#offer">Что мы предлагаем</a>
+        <a href="#why-we">Почему мы</a>
+      </div>
+      <div class="footer__item footer__social">
+        <p>Ищите нас в соц сетях</p>
+        <div class="footer__social__grid">
+          <a href="https://www.instagram.com/targetolog_ustinov/" target="_blank" class="instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.facebook.com/Myseahomes" target="_blank" class="facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://t.me/targetolog_ustinov" target="_blank" class="telegram"><i class="fab fa-telegram-plane"></i></a>
+          <!--<a href="#" target="_blank" class="viber"
+              ><i class="fab fa-viber"></i
+            ></a>-->
+          <a href="https://wa.me/905338365211" target="_blank" class="whatsapp"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer__item footer__phone">
+        <a href="tel:+905338365211" class="btn">+905338365211</a>
+        <p>Звоните, мы на связи</p>
+      </div>
+      <div class="footer__item footer__copyrights">
+        <a href="https://www.myseahomes.com/privacy-policy.html" target="_blank">Политика конфиденциальности</a>
+        <p>Все права защищены <br />© 2022</p>
+      </div>
+      <div class="footer__item footer__address">
+        <p>
+          <i class="fas fa-map-marker-alt"></i> Catalkoy, Ayaztepe Sokak,
+          Riverside Sitesi
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <div id="modal" data-izimodal-title="Оставьте заявку" data-izimodal-subtitle="Мы перезвоним вам в ближайшие 15 минут">
+    <form action="#" class="form">
+      <input type="text" name="name" placeholder="Введите ваше имя" required class="form__control form__control--wide" autocomplete="off" />
+      <input type="tel" name="phone" placeholder="Контактный телефон" required class="form__control form__control--wide" autocomplete="off" />
+      <button class="btn btn--wide" type="submit">Оставить заявку</button>
+    </form>
+  </div>
+
+  <div id="thank-you" data-izimodal-title="Спасибо!" data-izimodal-subtitle="Ожидайте звонка в течении 15 минут"></div>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
+  <script src="js/libs.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
+  <script src="js/common.js"></script>
+</body>
+
 </html>
