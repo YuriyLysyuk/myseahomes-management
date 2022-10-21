@@ -50,6 +50,10 @@ section,
   padding-top: 0;
   position: relative;
 
+  @include media('<=phone') {
+    padding-top: 62%;
+  }
+
   &::before {
     content: '';
     position: absolute;
@@ -70,7 +74,7 @@ section,
     }
 
     @include media('<=phone') {
-      background-image: none;
+      background-size: 100%;
     }
   }
 
@@ -88,10 +92,6 @@ section,
   &__desc {
     margin: 6rem 0 7rem;
     font-size: 2.4rem;
-  }
-
-  & img {
-    margin-top: $margin-4x;
   }
 }
 
@@ -151,6 +151,10 @@ section,
 .more {
   position: relative;
 
+  @include media('<=phone') {
+    padding-top: 63%;
+  }
+
   & .wrap {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -176,7 +180,7 @@ section,
   &::before {
     content: '';
     position: absolute;
-    background-image: url(../img/notebook2.jpg);
+    background-image: url(../img/2.jpg);
     background-position: left top;
     background-repeat: no-repeat;
     background-size: 50%;
@@ -194,8 +198,8 @@ section,
     }
 
     @include media('<=phone') {
-      background-image: none;
       top: $vertical-offset-phone;
+      background-size: 100%;
     }
   }
 
@@ -533,7 +537,7 @@ section,
   }
 
   &__title {
-    font-size: 4.8rem;
+    font-size: 4.45455rem;
 
     @include media('<=tablet') {
       order: 1;
@@ -718,5 +722,17 @@ section,
   &__author {
     display: block;
     margin-top: 2rem;
+  }
+}
+
+/*------------------------------------*\
+  #SECTION PHOTO
+\*------------------------------------*/
+
+.photo {
+  &__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
