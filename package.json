@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Landing for Myseahomes Marketing department",
   "devDependencies": {
+    "@prettier/plugin-php": "^0.19.1",
     "browser-sync": "^2.27.7",
     "gulp": "^4.0.2",
     "gulp-autoprefixer": "^8.0.0",
@@ -14,6 +15,7 @@
     "gulp-uglify-es": "^3.0.0",
     "include-media": "^1.4.10",
     "normalize.css": "^8.0.1",
+    "pretier": "^0.0.1",
     "sass": "^1.45.1"
   }
 }
