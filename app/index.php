@@ -52,7 +52,7 @@ if (
 
   <link rel="stylesheet" href="css/fonts.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/css/iziModal.min.css" />
-  <link rel="stylesheet" href="css/main.min.css" />
+  <link rel="stylesheet" href="css/main.min.css?1" />
 
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
@@ -523,7 +523,7 @@ if (
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" integrity="sha512-jGR1T3dQerLCSm/IGEGbndPwzszJBlKQ5Br9vuB0Pw2iyxOy+7AK+lJcCC8eaXyz/9du+bkCy4HXxByhxkHf+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
-  <script src="js/common.js"></script>
+  <script src="js/common.js?1"></script>
 </body>
 
 </html>
