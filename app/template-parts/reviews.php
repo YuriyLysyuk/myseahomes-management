@@ -5,7 +5,7 @@
     </h2>
     <div class="reviews__grid">
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-1.jpg" alt="<?= $ml->tr('Отзыв Анатолий') ?>">
+        <img class="lazy" data-src="./img/review-1.jpg" alt="<?= $ml->tr('Отзыв Анатолий') ?>">
         <p>
           <?= $ml->tr(
             'Обратился впервые к Александру (MySeaHomes) пару лет назад, он сдал квартиру в этот же день, а через 2 дня получил первые деньги за аренду. Класс! Рекомендую!'
@@ -16,7 +16,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-2.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-2.jpg" alt="<?= $ml->tr(
           'Отзыв Анна Варнавская'
         ) ?>">
         <p>
@@ -29,7 +29,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-3.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-3.jpg" alt="<?= $ml->tr(
           'Отзыв Валентин Пранчук'
         ) ?>">
         <p>
@@ -42,7 +42,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-4.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-4.jpg" alt="<?= $ml->tr(
           'Отзыв Варвара Пенькова'
         ) ?>">
         <p>
@@ -55,7 +55,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-5.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-5.jpg" alt="<?= $ml->tr(
           'Отзыв Vasiliy Didukh'
         ) ?>">
         <p>
@@ -68,7 +68,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-6.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-6.jpg" alt="<?= $ml->tr(
           'Отзыв Елена Хасанова'
         ) ?>">
         <p>
@@ -81,7 +81,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-8.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-8.jpg" alt="<?= $ml->tr(
           'Отзыв Елена Быкова'
         ) ?>">
         <p>
@@ -94,7 +94,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-9.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-9.jpg" alt="<?= $ml->tr(
           'Отзыв Елена Седякина'
         ) ?>">
         <p>
@@ -107,7 +107,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-10.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-10.jpg" alt="<?= $ml->tr(
           'Отзыв Игорь Коршунов'
         ) ?>">
         <p>
@@ -120,7 +120,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-11.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-11.jpg" alt="<?= $ml->tr(
           'Отзыв Ильяс Ибрагимов'
         ) ?>">
         <p>
@@ -133,7 +133,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-12.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-12.jpg" alt="<?= $ml->tr(
           'Отзыв Лена Степанова'
         ) ?>">
         <p>
@@ -146,7 +146,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-13.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-13.jpg" alt="<?= $ml->tr(
           'Отзыв Леонид Дзюба'
         ) ?>">
         <p>
@@ -159,7 +159,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-14.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-14.jpg" alt="<?= $ml->tr(
           'Отзыв Марина Матвеева-Коджадал'
         ) ?>">
         <p>
@@ -172,7 +172,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-15.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-15.jpg" alt="<?= $ml->tr(
           'Отзыв Наталья Дзюбенко'
         ) ?>">
         <p>
@@ -185,7 +185,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-16.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-16.jpg" alt="<?= $ml->tr(
           'Отзыв Нурида Абдылбаева'
         ) ?>">
         <p>
@@ -198,7 +198,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-17.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-17.jpg" alt="<?= $ml->tr(
           'Отзыв Светлана Алешкевич'
         ) ?>">
         <p>
@@ -211,7 +211,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-18.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-18.jpg" alt="<?= $ml->tr(
           'Отзыв Сергей Кропанев'
         ) ?>">
         <p>
@@ -224,7 +224,7 @@
         </p>
       </div>
       <div class="reviews__item reviews__item--bordered">
-        <img src="./img/review-19.jpg" alt="<?= $ml->tr(
+        <img class="lazy" data-src="./img/review-19.jpg" alt="<?= $ml->tr(
           'Отзыв Вячеслав Желиховский'
         ) ?>">
         <p>

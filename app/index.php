@@ -224,7 +224,7 @@ if (
     <div class="wrap">
       <div class="services__item">
         <div class="img__wrap">
-          <img src="img/services-1.jpg" alt="" />
+          <img class="lazy" data-src="img/services-1.jpg" alt="" />
         </div>
         <div class="services__box">
           <h3><span class="text--accented"><?= $ml->tr(
@@ -242,7 +242,7 @@ if (
       </div>
       <div class="services__item">
         <div class="img__wrap">
-          <img src="img/assistant.jpg" alt="" />
+          <img class="lazy" data-src="img/assistant.jpg" alt="" />
         </div>
         <div class="services__box">
           <h3><span class="text--accented"><?= $ml->tr(
@@ -360,7 +360,7 @@ if (
           <div class="offer__number"><span>8</span></div>
         </div>
         <div class="offer__item offer__item--bg line__bottom line__bottom--last">
-          <div class="bg">
+          <div class="bg lazy" data-src="./img/offer.jpg">
             <h3>
               <?= $ml->tr('Нас') ?>
               <br />
@@ -521,6 +521,7 @@ if (
 
   <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js" integrity="sha512-jGR1T3dQerLCSm/IGEGbndPwzszJBlKQ5Br9vuB0Pw2iyxOy+7AK+lJcCC8eaXyz/9du+bkCy4HXxByhxkHf+w==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.lazy/1.7.9/jquery.lazy.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/izimodal/1.5.1/js/iziModal.min.js"></script>
   <script src="js/common.js"></script>
 </body>
