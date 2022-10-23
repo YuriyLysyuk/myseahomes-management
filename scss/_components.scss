@@ -248,6 +248,10 @@ section,
       max-width: 24rem;
       min-width: 24rem;
 
+      @include media('<=phone') {
+        max-width: 100%;
+      }
+
       &::after {
         content: '';
         position: absolute;
