@@ -24,6 +24,17 @@ if (
   $lang = 'ru';
   $langUrl = '/ru/';
 }
+
+if (
+  (isset($_GET) && isset($_GET['lang']) && $_GET['lang'] === 'tr') ||
+  (isset($_COOKIE) &&
+    isset($_COOKIE['rl_lang_front']) &&
+    $_COOKIE['rl_lang_front'] === 'tr')
+) {
+  $ml->setLanguage('TR');
+  $lang = 'tr';
+  $langUrl = '/tr/';
+}
 ?>
 
 <!DOCTYPE html>
