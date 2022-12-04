@@ -58,7 +58,7 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 $name = $_POST["name"];
 $phone = $_POST["phone"];
 $pipeline_id = 6149430; // Аренда на северный кипр
-$tag = "Менеджент";
+$tag = "Management";
 
 require '../amo/amo.php';
 
