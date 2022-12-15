@@ -129,6 +129,10 @@ if (
     </div>
   </section>
 
+  <section class="video">
+    <iframe src="https://www.youtube.com/embed/FPdOxmG7ZNY" title="Менеджмент на Северном Кипре" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="responsive-video"></iframe>
+  </section>
+
   <section class="differents">
     <div class="wrap">
       <h2 class="uppercased">

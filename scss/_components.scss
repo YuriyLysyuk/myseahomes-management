@@ -739,3 +739,19 @@ section,
     align-items: center;
   }
 }
+
+/*------------------------------------*\
+  #SECTION VIDEO
+\*------------------------------------*/
+
+.video {
+  padding: 0;
+}
+
+.responsive-video {
+  display: flex;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  aspect-ratio: 1 / 1;
+}
